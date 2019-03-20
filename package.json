@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lndbaryshnikov/resume.git"
+  },
+  "author": "Leonid Baryshnikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lndbaryshnikov/resume/issues"
+  },
+  "homepage": "https://github.com/lndbaryshnikov/resume#readme"
+}
