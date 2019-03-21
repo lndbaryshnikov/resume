@@ -25,6 +25,15 @@ module.exports = {
                 options: {
                     pretty: true
                 }
+            },
+            {
+                test: /\.scss$/,
+                include: paths,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                    ]
             }
         ]
     },
