@@ -1,0 +1,5 @@
+mixin header(icon_name, block_name)
+    .block-header__wrapper
+        img.block-header__icon(src=require('../img/icons/' + icon_name))
+        div.block-header__name= block_name
+        div.block-header__line
