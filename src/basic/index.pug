@@ -1,5 +1,5 @@
 include ../common.blocks/block-header/block-header
-
+include ../common.blocks/contact/contact__content
 
 doctype html
 html
@@ -7,7 +7,20 @@ html
         meta(charset = 'utf-8')
         title Resume
     body
-        +header('PROFILE_ICON.png', 'profile')
+        .section-wrapper
+            +header('PROFILE_ICON.png', 'profile')
+            include ../common.blocks/profile/profile__content
+        .section-wrapper
+            +header('CONTACT_ICON.png', 'contact')
+            table.contact__table
+                +contact('adress', 'Main Street, City')
+                +contact('e-mail', 'contact@domain.com')
+                +contact('phone', '555-555-555')
+                +contact('website', 'www.yourweb.com')
+
+
+
+
 
 
 

@@ -1,6 +1,11 @@
-@import '../fonts/MyriadPro-Bold.scss';
+@import '../fonts/fonts';
+@import '../common.blocks/section-wrapper/section-wrapper';
+@import '../common.blocks/block-header/block-header__wrapper';
 @import '../common.blocks/block-header/block-header__name';
 @import '../common.blocks/block-header/block-header__line';
 @import '../common.blocks/block-header/block-header__icon';
-@import '../common.blocks/block-header/block-header__wrapper';
+@import '../common.blocks/profile/profile__content';
+@import '../common.blocks/contact/contact__table';
+@import '../common.blocks/contact/contact__data';
+@import '../common.blocks/contact/contact__type';
 
