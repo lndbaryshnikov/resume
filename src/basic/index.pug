@@ -10,6 +10,14 @@ html
         meta(charset = 'utf-8')
         title Resume
     body
+        div(class=['section-wrapper', 'section-wrapper_header'])
+            .header__disk
+                .header__disk-inner
+            .header__name
+                span.header__name-here NAME HERE
+                <br>
+                span.header__surname SURNAME
+            .header__job GRAPHIC DESIGNER
         .section-wrapper
             +header('PROFILE_ICON.png', 'profile')
             include ../common.blocks/profile/profile__content
@@ -27,7 +35,7 @@ html
                 +skill('teamwork', '11')
                 +skill('innovate', '6')
                 +skill('communication', '11')
-        div(class=['section-wrapper', 'section-wrapper_width_wide'])
+        div(class=['section-wrapper', 'section-wrapper_width_wide', 'section-wrapper_column_right'])
             +header('EDUCATION_ICON.png', 'education')
             ul.education__ul
                 +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
