@@ -1,0 +1,9 @@
+- var educationDescription = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+mixin education(degree, studyingTime, universityName)
+    li
+        | <span class="education__degree">#{degree}</span>
+        | <span class="education__studying-time">//#{studyingTime}</span>
+        | <br>
+        | <span class="education__university-name">#{universityName}</span>
+        | <br>
+        | <span class="education__description">#{educationDescription}</span>

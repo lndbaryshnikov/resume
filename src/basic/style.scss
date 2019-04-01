@@ -1,5 +1,6 @@
 @import '../fonts/fonts';
 @import '../common.blocks/section-wrapper/section-wrapper';
+@import '../common.blocks/section-wrapper/section-wrapper_width_wide';
 @import '../common.blocks/block-header/block-header__wrapper';
 @import '../common.blocks/block-header/block-header__name';
 @import '../common.blocks/block-header/block-header__line';
@@ -13,5 +14,8 @@
 @import '../common.blocks/skills/skills__level';
 @import '../common.blocks/skills/skills__point/skills__point';
 @import '../common.blocks/skills/skills__point/skills__point_checked';
-
+@import '../common.blocks/education/education__degree';
+@import '../common.blocks/education/education__stydying-time';
+@import '../common.blocks/education/education__university-name';
+@import '../common.blocks/education/education__description';
 
