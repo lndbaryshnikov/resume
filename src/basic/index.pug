@@ -1,5 +1,6 @@
 include ../common.blocks/block-header/block-header
 include ../common.blocks/contact/contact__content
+include ../common.blocks/skills/skills__skill
 
 doctype html
 html
@@ -17,6 +18,14 @@ html
                 +contact('e-mail', 'contact@domain.com')
                 +contact('phone', '555-555-555')
                 +contact('website', 'www.yourweb.com')
+        .section-wrapper
+            +header('SKILLS_ICON.png', 'skills')
+            .skills__content
+                +skill('creative', '9')
+                +skill('teamwork', '11')
+                +skill('innovate', '6')
+                +skill('communication', '11')
+
 
 
 
