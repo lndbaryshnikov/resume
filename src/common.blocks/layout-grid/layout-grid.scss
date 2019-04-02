@@ -1,6 +1,10 @@
 .layout-grid {
   display: flex;
   flex-flow: column wrap;
+  align-content: space-between;
+  margin-left: 120px*0.55;
+  margin-right: 115px*0.55;
+  margin-top:150px*0.55;
   max-height: 3508px*0.55;
-  background-color: lightpink;
+  background-color: aquamarine;
 }
