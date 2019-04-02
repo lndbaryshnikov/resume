@@ -3,7 +3,7 @@ include ../common.blocks/contact/contact__content
 include ../common.blocks/skills/skills__skill
 include ../common.blocks/education/education__item
 //include ../common.blocks/education/education__description
-
+- var wideWrapperClasses = ['section-wrapper', 'section-wrapper_width_wide'];
 doctype html
 html
     head
@@ -36,13 +36,21 @@ html
                     +skill('teamwork', '11')
                     +skill('innovate', '6')
                     +skill('communication', '11')
-            div(class=['section-wrapper', 'section-wrapper_width_wide'])
+            div(class=wideWrapperClasses)
                 +header('EDUCATION_ICON.png', 'education')
                 ul.education__ul
                     +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
                     +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
                     +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
                     +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
+            div(class=wideWrapperClasses)
+                +header('EXPERIENCE_ICON.png', 'experience')
+                ul.education__ul
+                    +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
+                    +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
+                    +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
+
+
 
 
 
