@@ -3,6 +3,7 @@ include ../common.blocks/contact/contact__content
 include ../common.blocks/skills/skills__skill
 include ../common.blocks/education/education__item
 //include ../common.blocks/education/education__description
+include ../common.blocks/software/software__item
 - var wideWrapperClasses = ['section-wrapper', 'section-wrapper_width_wide'];
 doctype html
 html
@@ -49,6 +50,17 @@ html
                     +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
                     +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
                     +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
+            div(class=wideWrapperClasses)
+                +header('SOFTWARE_ICON.png', 'software')
+                .software__content-wrapper
+                    +software('photoshop', 505/554*100)
+                    +software('illustrator', 391/554*100)
+                    +software('indesign', 312/554*100)
+                    +software('dreamweaver', 461/554*100)
+                    +software('after effects', 342/554*100)
+                    +software('html&css3', 505/554*100)
+
+
 
 
 
