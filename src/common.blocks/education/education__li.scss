@@ -1,0 +1,15 @@
+.education__li {
+  position: relative;
+}
+
+.education__li:before {
+  content: "";
+  background-color: black;
+  width: 40px*0.55;
+  height: 40px*0.55;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -43px*0.55-40px*0.55;
+  top: 7px;
+}
