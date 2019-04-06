@@ -1,11 +1,22 @@
 .contact__type {
   color: #3d6cb0;
   font-family: "Myriad Pro - Bold";
-  font-size: (41/31) + em;
+  font-size: 1.3em;
+  font-weight: 700;
   text-transform: uppercase;
-  //border: 1px solid black;
-  padding: 40px*0.55;
-  padding-right: 85px*0.55;
+  border: 1px solid black;
+  padding: 32px*0.55;
+  padding-top: 25px;
+  padding-right: 65px*0.55;
   padding-left: 0px;
+  //width: 10px;
   //background-color: bisque;
 }
+
+//.contact__type:nth-child(1) {
+//  padding-top: 25px;
+//}
+
+//.contact__type:nth-child(4) {
+//  padding-top: 0px;
+//}

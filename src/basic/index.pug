@@ -26,11 +26,11 @@ html
             .section-wrapper
                 +header('CONTACT_ICON.png', 'contact')
                 table.contact__table
-                    +contact('adress', 'Main Street, City')
+                    +contact('address', 'Main Street, City')
                     +contact('e-mail', 'contact@domain.com')
                     +contact('phone', '555-555-555')
                     +contact('website', 'www.yourweb.com')
-            .section-wrapper
+            div(class=['section-wrapper', 'section-wrapper_skills'])
                 +header('SKILLS_ICON.png', 'skills')
                 .skills__content
                     +skill('creative', '9')
@@ -44,7 +44,7 @@ html
                     +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
                     +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
                     +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
-            div(class=wideWrapperClasses)
+            div(class=wideWrapperClasses class=['section-wrapper_experience'])
                 +header('EXPERIENCE_ICON.png', 'experience')
                 ul.education__ul
                     +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')

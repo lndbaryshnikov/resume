@@ -1,5 +1,10 @@
 .skills__level {
   display: flex;
   justify-content: space-between;
-  width: 78%;
+  width: 77.8%;
+  margin-bottom: 22px;
 }
+
+//.skills__level:last-child {
+//  margin-right: 0px;
+//}

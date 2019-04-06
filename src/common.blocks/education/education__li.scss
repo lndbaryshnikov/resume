@@ -1,6 +1,6 @@
 .education__li {
   position: relative;
-  margin-bottom: 41px*0.55;
+  margin-bottom: 13px;
 }
 
 .education__li:before {
@@ -11,10 +11,14 @@
   display: inline-block;
   border-radius: 50%;
   position: absolute;
-  left: -43px*0.55-40px*0.55;
-  top: 7px;
+  left: -44px;
+  top: 5px;
 }
 
 .education__li:nth-child(1) {
   margin-top: 54px*0.55;
+}
+
+.education__li:nth-child(4) {
+  margin-top: -3px;
 }
