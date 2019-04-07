@@ -1,0 +1,32 @@
+@media screen and (max-width: 722px) {
+  .section-wrapper,
+  .section-wrapper_width_wide {
+    width: 100%;
+  }
+
+  .layout-grid {
+    flex-wrap: nowrap;
+  }
+
+  .section-wrapper_width_wide {
+    margin-left: 0;
+  }
+
+  .skills__level {
+    width: 50vw;
+  }
+
+  .education__ul {
+    margin-left: 5px;
+  }
+
+  .software__scale {
+    width: 50vw;
+    height: 2.5vw;
+  }
+
+  .software__content-wrapper {
+    height:500px;
+    align-content: center;
+  }
+}

@@ -1,0 +1,25 @@
+.contact__table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact__type, .contact__data {
+  display: block;
+  padding: 0;
+}
+
+.contact__type{
+  margin-bottom: 10px;
+}
+
+.contact__tr {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact__tr:last-child {
+  margin-bottom: 0;
+}
