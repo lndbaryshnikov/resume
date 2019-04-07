@@ -26,7 +26,7 @@ html
             .section-wrapper
                 +header('CONTACT_ICON.png', 'contact')
                 table.contact__table
-                    +contact('address', 'Main Street, City')
+                    +contact('address', 'Main Street, City.')
                     +contact('e-mail', 'contact@domain.com')
                     +contact('phone', '555-555-555')
                     +contact('website', 'www.yourweb.com')
@@ -46,11 +46,11 @@ html
                     +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
             div(class=wideWrapperClasses class=['section-wrapper_experience'])
                 +header('EXPERIENCE_ICON.png', 'experience')
-                ul.education__ul
+                ul(class=['education__ul', 'experience__ul'])
                     +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
                     +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
                     +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
-            div(class=wideWrapperClasses)
+            div(class=wideWrapperClasses class=['section-wrapper_software'])
                 +header('SOFTWARE_ICON.png', 'software')
                 .software__content-wrapper
                     +software('photoshop', 505/554*100)

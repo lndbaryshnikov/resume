@@ -1,5 +1,23 @@
 .software__content-wrapper {
   display: flex;
   flex-flow: column wrap;
-  height: 300px;
+  align-content: space-between;
+  //align-content: flex-start;
+  height: 350px;
+  margin-top: 25px;
+  margin-left: 5.5px;
+  margin-right: 0.5px;
+  //background-color: aqua;
+}
+
+.software__content-wrapper:nth-child(1),
+.software__content-wrapper:nth-child(2),
+.software__content-wrapper:nth-child(3) {
+  //margin-left: 6px;
+}
+
+.software__content-wrapper:nth-child(4),
+.software__content-wrapper:nth-child(5),
+.software__content-wrapper:nth-child(6) {
+
 }
