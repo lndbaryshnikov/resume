@@ -3,10 +3,10 @@ node_modules/
 .idea/
 
 # Fonts
-src/fonts/
+#src/fonts/
 
 # Dist
-dist/
+#dist/
 
 # Reports
 report.20190401.140738.8624.001.json
