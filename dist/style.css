@@ -1,0 +1,378 @@
+body {
+  max-width: 1920px;
+  font-size: calc(9.791px + 0.5vw); }
+
+@media screen and (max-width: 1094px) {
+  body {
+    font-size: 13.97px; } }
+
+@font-face {
+  font-family: 'Myriad Pro - Bold';
+  src: url(fonts/MyriadPro-Bold.woff) format("woff"), url(fonts/MyriadPro-Bold.ttf) format("truetype"), url(fonts/MyriadPro-Bold.svg) format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro - Regular';
+  src: url(fonts/MyriadPro-Regular.woff) format("woff"), url(fonts/MyriadPro-Regular.ttf) format("truetype"), url(fonts/MyriadPro-Regular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro - Light Semi Ext';
+  src: url(fonts/MyriadPro-LightSemiExt.woff) format("woff"), url(fonts/MyriadPro-LightSemiExt.ttf) format("truetype"), url(fonts/MyriadPro-LightSemiExt.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.layout-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-left: 3.805em;
+  margin-right: 3.309em;
+  margin-top: 4.964em;
+  max-height: 2200px; }
+
+@media screen and (max-width: 400px) {
+  .layout-grid {
+    margin-left: 8vw;
+    margin-right: 8vw; } }
+
+@media screen and (max-width: 722px) {
+  .layout-grid {
+    flex-wrap: nowrap; } }
+
+.header__disk {
+  width: 14.891em;
+  height: 14.891em;
+  border: 2px solid #3d6cb0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35.2px;
+  margin-left: 15px;
+  margin-top: 12px; }
+
+.header__disk-inner {
+  width: 13.236em;
+  height: 13.236em;
+  background-color: #3d6cb0;
+  border-radius: 50%; }
+
+.header__name {
+  line-height: 0.9;
+  text-align: center;
+  text-transform: uppercase; }
+
+.header__name-here {
+  color: #000000;
+  font-family: "Myriad Pro - Light Semi Ext";
+  font-size: 3.46em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 17.7px; }
+
+.header__surname {
+  color: #000000;
+  font-family: "Myriad Pro - Bold";
+  font-size: 4.015em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 15px;
+  margin-top: 100px;
+  line-height: 0.98; }
+
+.header__job {
+  color: #000000;
+  font-family: "Myriad Pro - Bold";
+  font-size: 1.565em;
+  text-transform: uppercase;
+  margin-top: 8.3105px;
+  margin-left: 18px; }
+
+.section-wrapper {
+  width: 36.75%;
+  margin-bottom: 49.5px; }
+
+@media screen and (max-width: 722px) {
+  .section-wrapper {
+    width: 100%; } }
+
+.section-wrapper_type_for-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 82.5px; }
+
+.section-wrapper_width_wide {
+  width: 56%;
+  margin-right: 4px; }
+
+@media screen and (max-width: 722px) {
+  .section-wrapper_width_wide {
+    width: 100%;
+    margin-left: 0; } }
+
+.block-header__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center; }
+
+.block-header__name {
+  color: #3d6cb0;
+  font-family: "Myriad Pro - Bold";
+  margin-left: 2.4%;
+  margin-top: -4px;
+  font-size: 2.671em;
+  white-space: nowrap;
+  text-transform: uppercase; }
+
+@media screen and (max-width: 400px) {
+  .block-header__name {
+    font-size: 2.2em; } }
+
+.block-header__line {
+  width: 100%;
+  margin-left: 1.7%;
+  margin-top: -5px;
+  margin-right: 1px;
+  height: 0.45vw;
+  background-color: #3d6cb0; }
+
+.block-header__icon {
+  width: 4.78em;
+  max-width: 81.4px; }
+
+@media screen and (max-width: 400px) {
+  .block-header__icon {
+    width: 3.5em; } }
+
+.profile__content {
+  color: #000000;
+  font-family: "Myriad Pro - Regular";
+  font-size: 1em;
+  margin-top: 12.7px;
+  margin-left: 0.35px; }
+  .profile__content .bold {
+    font-family: "Myriad Pro - Bold"; }
+
+.contact__table {
+  display: table;
+  margin-top: 12px;
+  line-height: 1em;
+  margin-left: -2px; }
+
+.contact__tr {
+  display: table-row; }
+
+.contact__data {
+  display: table-cell;
+  color: #000000;
+  font-family: "Myriad Pro - Regular";
+  font-size: 1.34em;
+  padding-top: 9px;
+  padding-left: 5px; }
+
+.contact__type {
+  display: table-cell;
+  color: #3d6cb0;
+  font-family: "Myriad Pro - Bold";
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 24px 1.79em 17.6px 0px; }
+
+.contact__table
+.contact__tr:nth-child(4)
+.contact__type {
+  padding-top: 22px; }
+
+@media screen and (max-width: 400px) {
+  .contact__table {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contact__type, .contact__data {
+    display: block;
+    padding: 0; }
+  .contact__type {
+    margin-bottom: 10px; }
+  .contact__tr {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px; }
+  .contact__tr:last-child {
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 1094px) and (min-width: 723px) {
+  .contact__table {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contact__type, .contact__data {
+    display: block;
+    padding: 0; }
+  .contact__type {
+    margin-bottom: 10px; }
+  .contact__tr {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px; }
+  .contact__tr:last-child {
+    margin-bottom: 0; } }
+
+.section-wrapper_type_for-skills {
+  margin-top: -11px; }
+
+.skills__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22.446px; }
+
+.skills__name {
+  color: #000000;
+  font-family: "Myriad Pro - Regular";
+  font-size: 1.68em;
+  text-transform: uppercase;
+  margin-bottom: 7.8px;
+  margin-left: 2.5px; }
+
+.skills__level {
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
+  margin-bottom: 22px; }
+
+@media screen and (max-width: 722px) {
+  .skills__level {
+    width: 50vw; } }
+
+.skills__point {
+  width: 1.092em;
+  height: 1.092em;
+  background-color: #e6e6e6;
+  border-radius: 50%; }
+
+.skills__point_checked {
+  background-color: #3d6cb0; }
+
+.education__ul {
+  list-style-type: none;
+  width: 90%;
+  margin-left: 15px;
+  margin-top: -2.5px; }
+
+@media screen and (max-width: 722px) {
+  .education__ul {
+    margin-left: 5px; } }
+
+.education__li {
+  position: relative;
+  margin-bottom: 12.5px; }
+
+.education__li:before {
+  content: "";
+  background-color: black;
+  width: 1.324em;
+  height: 1.324em;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -44px;
+  top: 5px; }
+
+.education__li:nth-child(1) {
+  margin-top: 29.7px; }
+
+.education__li:nth-child(4) {
+  margin-top: -3px; }
+
+.education__degree {
+  color: #3d6cb0;
+  font-family: "Myriad Pro - Bold";
+  font-size: 1.66em;
+  text-transform: uppercase;
+  margin-right: 17px; }
+
+.education__studying-time {
+  color: #020202;
+  font-family: "Myriad Pro - Regular";
+  font-size: 1.7em;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: -2px; }
+
+.education__university-name {
+  color: #000000;
+  font-family: "Myriad Pro - Regular";
+  font-size: 1.66em;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.45; }
+
+.education__description {
+  color: #000000;
+  font-family: "Myriad Pro - Regular";
+  font-size: 1em;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 2.5px;
+  margin-left: 2px;
+  line-height: 1.255; }
+
+.section-wrapper_type_for-experience {
+  margin-top: -10px; }
+
+.experience__ul {
+  margin-top: 42px; }
+
+.experience__company-name {
+  color: black; }
+
+.section-wrapper_type_for-software {
+  margin-top: -6px; }
+
+.software__content-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  height: 300px;
+  margin-top: 25px;
+  margin-left: 5.5px;
+  margin-right: 0.5px;
+  width: 99%; }
+
+@media screen and (max-width: 722px) {
+  .software__content-wrapper {
+    height: 500px;
+    align-content: center; } }
+
+.software__item {
+  margin-bottom: 25px; }
+
+.software__tool {
+  color: #000000;
+  font-family: "Myriad Pro - Regular";
+  font-size: 1.66em;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.software__scale {
+  width: 21.75vw;
+  height: 1.772vw;
+  background-color: #e6e6e6;
+  margin-top: 11px;
+  margin-left: 1px; }
+
+@media screen and (max-width: 722px) {
+  .software__scale {
+    width: 50vw;
+    height: 2.5vw; } }
+
+.software__level {
+  background-color: #3d6cb0;
+  height: 100%; }

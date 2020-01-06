@@ -6,4 +6,12 @@
   margin-top: 25px;
   margin-left: 5.5px;
   margin-right: 0.5px;
+  width: 99%;
+}
+
+@media screen and (max-width: 722px) {
+  .software__content-wrapper {
+    height:500px;
+    align-content: center;
+  }
 }

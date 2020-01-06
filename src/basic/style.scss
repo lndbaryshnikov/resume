@@ -1,6 +1,9 @@
 @import '../common.blocks/body/body';
+
 @import '../fonts/fonts';
+
 @import '../common.blocks/layout-grid/layout-grid';
+
 @import '../common.blocks/header/header__disk';
 @import '../common.blocks/header/header__disk-inner';
 @import '../common.blocks/header/header__name';
@@ -9,38 +12,46 @@
 @import '../common.blocks/header/header__job';
 
 @import '../common.blocks/section-wrapper/section-wrapper';
-@import '../common.blocks/section-wrapper/section-wrapper_header';
+@import '../common.blocks/section-wrapper/section-wrapper_type_for-header';
 @import '../common.blocks/section-wrapper/section-wrapper_width_wide';
+
 @import '../common.blocks/block-header/block-header__wrapper';
 @import '../common.blocks/block-header/block-header__name';
 @import '../common.blocks/block-header/block-header__line';
 @import '../common.blocks/block-header/block-header__icon';
+
 @import '../common.blocks/profile/profile__content';
+
 @import '../common.blocks/contact/contact__table';
 @import '../common.blocks/contact/contact__tr';
 @import '../common.blocks/contact/contact__data';
 @import '../common.blocks/contact/contact__type';
-@import '../common.blocks/section-wrapper/section-wrapper_skills';
+@import '../common.blocks/contact/contact_type_columned';
+
+@import '../common.blocks/section-wrapper/section-wrapper_type_for-skills';
+
 @import '../common.blocks/skills/skills__content';
 @import '../common.blocks/skills/skills__name';
 @import '../common.blocks/skills/skills__level';
 @import '../common.blocks/skills/skills__point/skills__point';
 @import '../common.blocks/skills/skills__point/skills__point_checked';
+
 @import '../common.blocks/education/education__ul';
 @import '../common.blocks/education/education__li';
 @import '../common.blocks/education/education__degree';
 @import '../common.blocks/education/education__stydying-time';
 @import '../common.blocks/education/education__university-name';
 @import '../common.blocks/education/education__description';
-@import '../common.blocks/section-wrapper/section-wrapper_experience';
+
+@import '../common.blocks/section-wrapper/section-wrapper_type_for-experience';
+
 @import '../common.blocks/experience/experience__ul';
 @import '../common.blocks/experience/experience__company-name';
-@import '../common.blocks/section-wrapper/section-wrapper_software';
+
+@import '../common.blocks/section-wrapper/section-wrapper_type_for-software';
+
 @import '../common.blocks/software/software__content-wrapper';
 @import '../common.blocks/software/software__item';
 @import '../common.blocks/software/software__tool';
 @import '../common.blocks/software/software__scale';
 @import '../common.blocks/software/software__level';
-@import '../common.blocks/media/_max-width/media_max-width_400';
-@import '../common.blocks/media/_max-width/media_max-width_722';
-@import '../common.blocks/media/_max-width/media_max-width_1094';

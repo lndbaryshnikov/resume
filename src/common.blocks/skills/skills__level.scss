@@ -1,6 +1,12 @@
 .skills__level {
   display: flex;
   justify-content: space-between;
-  width: 77.8%;
+  width: 78%;
   margin-bottom: 22px;
+}
+
+@media screen and (max-width: 722px) {
+  .skills__level {
+    width: 50vw;
+  }
 }

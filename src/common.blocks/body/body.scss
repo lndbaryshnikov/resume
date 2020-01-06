@@ -1,6 +1,11 @@
-.body {
+body {
   max-width: 1920px;
-  //background-color: bisque;
-  //font-size: 30.2px*0.55;
   font-size: calc(9.791px + 0.5vw);
 }
+
+@media screen and (max-width: 1094px) {
+  body {
+    font-size: 8.5px + 0.005*1094px;
+  }
+}
+

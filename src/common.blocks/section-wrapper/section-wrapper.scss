@@ -2,3 +2,9 @@
   width: 36.75%;
   margin-bottom: 90px*0.55;
 }
+
+@media screen and (max-width: 722px) {
+  .section-wrapper {
+    width: 100%;
+  }
+}

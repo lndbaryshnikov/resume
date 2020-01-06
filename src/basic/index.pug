@@ -2,77 +2,66 @@ include ../common.blocks/block-header/block-header
 include ../common.blocks/contact/contact__content
 include ../common.blocks/skills/skills__skill
 include ../common.blocks/education/education__item
-//include ../common.blocks/education/education__description
 include ../common.blocks/software/software__item
-- var wideWrapperClasses = ['section-wrapper', 'section-wrapper_width_wide'];
+
+- const wideWrapperClasses = ['section-wrapper', 'section-wrapper_width_wide'];
+
 doctype html
 html
     head
         meta(charset = 'utf-8')
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="Adaptive resume template")
         title Resume
-    body.body
+    body
         .layout-grid
-            div(class=['section-wrapper', 'section-wrapper_header'])
+            section(class=['section-wrapper', 'section-wrapper_type_for-header'])
                 .header__disk
                     .header__disk-inner
                 .header__name
-                    span.header__name-here NAME HERE
+                    span.header__name-here name here
                     <br>
-                    span.header__surname SURNAME
-                .header__job GRAPHIC DESIGNER
-            .section-wrapper
-                +header('PROFILE_ICON.png', 'profile')
+                    span.header__surname surname
+                .header__job graphic designer
+
+            section.section-wrapper
+                +header('profile-icon.png', 'profile')
                 include ../common.blocks/profile/profile__content
-            .section-wrapper
-                +header('CONTACT_ICON.png', 'contact')
-                .contact__table
-                    +contact('address', 'Main Street, City.')
-                    +contact('e-mail', 'contact@domain.com')
-                    +contact('phone', '555-555-555')
-                    +contact('website', 'www.yourweb.com')
-            div(class=['section-wrapper', 'section-wrapper_skills'])
-                +header('SKILLS_ICON.png', 'skills')
+
+            section.section-wrapper
+                +header('contact-icon.png', 'contact')
+                table.contact__table
+                    -
+                        const contact = [['address', 'Main Street, City.'], ['e-mail', 'contact@domain.com'],
+                                ['phone', '555-555-555'], ['website', 'www.yourweb.com']];
+                    each item in contact
+                        +contact(item[0], item[1])
+
+            section(class=['section-wrapper', 'section-wrapper_type_for-skills'])
+                +header('skills-icon.png', 'skills')
                 .skills__content
-                    +skill('creative', '9')
-                    +skill('teamwork', '11')
-                    +skill('innovate', '6')
-                    +skill('communication', '11')
-            div(class=wideWrapperClasses)
-                +header('EDUCATION_ICON.png', 'education')
+                    - const skills = [['creative', '9'], ['teamwork', '11'], ['innovate', '6'], ['communication', '11']];
+                    each item in skills
+                        +skill(item[0], item[1])
+
+            section(class=wideWrapperClasses)
+                +header('education-icon.png', 'education')
                 ul.education__ul
-                    +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
-                    +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
-                    +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
-                    +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
-            div(class=wideWrapperClasses class=['section-wrapper_experience'])
-                +header('EXPERIENCE_ICON.png', 'experience')
+                    - for (let i = 0; i < 3; i++)
+                        +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
+
+            section(class=wideWrapperClasses class=['section-wrapper_type_for-experience'])
+                +header('experience-icon.png', 'experience')
                 ul(class=['education__ul', 'experience__ul'])
-                    +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
-                    +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
-                    +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
-            div(class=wideWrapperClasses class=['section-wrapper_software'])
-                +header('SOFTWARE_ICON.png', 'software')
+                    - for (let i = 0; i < 3; i++)
+                        +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
+
+            section(class=wideWrapperClasses class=['section-wrapper_type_for-software'])
+                +header('software-icon.png', 'software')
                 .software__content-wrapper
-                    +software('photoshop', 505/554*100)
-                    +software('illustrator', 391/554*100)
-                    +software('indesign', 312/554*100)
-                    +software('dreamweaver', 461/554*100)
-                    +software('after effects', 342/554*100)
-                    +software('html&css3', 505/554*100)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    -
+                        const software = [['photoshop', 505/554*100], ['illustrator', 391/554*100],
+                                   ['indesign', 312/554*100], ['dreamweaver', 461/554*100],
+                                   ['after effects', 342/554*100], ['html&css3', 505/554*100]];
+                    each item in software
+                        +software('photoshop', 505/554*100)

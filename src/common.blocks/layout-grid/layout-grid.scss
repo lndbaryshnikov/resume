@@ -7,7 +7,18 @@
   margin-left: 3.805em;
   margin-right: 3.309em;
   margin-top: 4.964em;
-  //max-height: 3508px*0.55;
   max-height: 4000px*0.55;
-  //background-color: antiquewhite;
+}
+
+@media screen and (max-width: 400px)  {
+  .layout-grid {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  .layout-grid {
+    flex-wrap: nowrap;
+  }
 }

@@ -1,11 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 const PATHS = {
     src: path.join(__dirname, 'src/basic'),
     dist: path.join(__dirname, 'dist')
 };
+
+plugins: [
+]
 
 module.exports = {
     entry: [
@@ -21,6 +25,7 @@ module.exports = {
             template: PATHS.src + '/index.pug',
         }),
         new ExtractTextPlugin('./style.css'),
+        new FaviconsWebpackPlugin('./src/img/icons/software-icon.png')
     ],
     module: {
         rules: [

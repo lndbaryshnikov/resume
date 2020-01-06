@@ -5,3 +5,10 @@
   margin-top: 11px;
   margin-left: 1px;
 }
+
+@media screen and (max-width: 722px) {
+  .software__scale {
+    width: 50vw;
+    height: 2.5vw;
+  }
+}

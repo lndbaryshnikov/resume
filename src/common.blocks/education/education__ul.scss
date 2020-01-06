@@ -1,7 +1,12 @@
 .education__ul {
   list-style-type: none;
   width: 90%;
-  //background-color: antiquewhite;
   margin-left: 15px;
   margin-top: -2.5px;
+}
+
+@media screen and (max-width: 722px) {
+  .education__ul {
+    margin-left: 5px;
+  }
 }
