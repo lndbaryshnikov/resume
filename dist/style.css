@@ -1,28 +1,32 @@
-body {
-  max-width: 1920px;
-  font-size: calc(9.791px + 0.5vw); }
-
-@media screen and (max-width: 1094px) {
-  body {
-    font-size: 13.97px; } }
-
 @font-face {
   font-family: 'Myriad Pro - Bold';
-  src: url(fonts/MyriadPro-Bold.woff) format("woff"), url(fonts/MyriadPro-Bold.ttf) format("truetype"), url(fonts/MyriadPro-Bold.svg) format("svg");
+  src: url(./fonts/MyriadPro-Bold.woff) format("woff"), url(./fonts/MyriadPro-Bold.ttf) format("truetype"), url(./fonts/MyriadPro-Bold.svg) format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Myriad Pro - Regular';
-  src: url(fonts/MyriadPro-Regular.woff) format("woff"), url(fonts/MyriadPro-Regular.ttf) format("truetype"), url(fonts/MyriadPro-Regular.svg) format("svg");
+  src: url(./fonts/MyriadPro-Regular.woff) format("woff"), url(./fonts/MyriadPro-Regular.ttf) format("truetype"), url(./fonts/MyriadPro-Regular.svg) format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Myriad Pro - Light Semi Ext';
-  src: url(fonts/MyriadPro-LightSemiExt.woff) format("woff"), url(fonts/MyriadPro-LightSemiExt.ttf) format("truetype"), url(fonts/MyriadPro-LightSemiExt.svg) format("svg");
+  src: url(./fonts/MyriadPro-LightSemiExt.woff) format("woff"), url(./fonts/MyriadPro-LightSemiExt.ttf) format("truetype"), url(./fonts/MyriadPro-LightSemiExt.svg) format("svg");
   font-weight: normal;
   font-style: normal; }
+
+html {
+  font-family: 'Myriad Pro - Regular';
+  font-size: calc(9.791px + 0.5vw);
+  color: #000000; }
+
+@media screen and (max-width: 1094px) {
+  html {
+    font-size: 13.97px; } }
+
+body {
+  max-width: 1920px; }
 
 .layout-grid {
   display: flex;
@@ -70,7 +74,7 @@ body {
 .header__name-here {
   color: #000000;
   font-family: "Myriad Pro - Light Semi Ext";
-  font-size: 3.46em;
+  font-size: 3.46rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-left: 17.7px; }
@@ -78,7 +82,7 @@ body {
 .header__surname {
   color: #000000;
   font-family: "Myriad Pro - Bold";
-  font-size: 4.015em;
+  font-size: 4.015rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-left: 15px;
@@ -88,7 +92,7 @@ body {
 .header__job {
   color: #000000;
   font-family: "Myriad Pro - Bold";
-  font-size: 1.565em;
+  font-size: 1.565rem;
   text-transform: uppercase;
   margin-top: 8.3105px;
   margin-left: 18px; }
@@ -126,7 +130,7 @@ body {
   font-family: "Myriad Pro - Bold";
   margin-left: 2.4%;
   margin-top: -4px;
-  font-size: 2.671em;
+  font-size: 2.671rem;
   white-space: nowrap;
   text-transform: uppercase; }
 
@@ -153,7 +157,7 @@ body {
 .profile__content {
   color: #000000;
   font-family: "Myriad Pro - Regular";
-  font-size: 1em;
+  font-size: 1rem;
   margin-top: 12.7px;
   margin-left: 0.35px; }
   .profile__content .bold {
@@ -172,7 +176,7 @@ body {
   display: table-cell;
   color: #000000;
   font-family: "Myriad Pro - Regular";
-  font-size: 1.34em;
+  font-size: 1.34rem;
   padding-top: 9px;
   padding-left: 5px; }
 
@@ -180,7 +184,7 @@ body {
   display: table-cell;
   color: #3d6cb0;
   font-family: "Myriad Pro - Bold";
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   padding: 24px 1.79em 17.6px 0px; }
@@ -236,7 +240,7 @@ body {
 .skills__name {
   color: #000000;
   font-family: "Myriad Pro - Regular";
-  font-size: 1.68em;
+  font-size: 1.68rem;
   text-transform: uppercase;
   margin-bottom: 7.8px;
   margin-left: 2.5px; }
@@ -294,14 +298,14 @@ body {
 .education__degree {
   color: #3d6cb0;
   font-family: "Myriad Pro - Bold";
-  font-size: 1.66em;
+  font-size: 1.66rem;
   text-transform: uppercase;
   margin-right: 17px; }
 
 .education__studying-time {
   color: #020202;
   font-family: "Myriad Pro - Regular";
-  font-size: 1.7em;
+  font-size: 1.7rem;
   font-weight: 400;
   display: inline-block;
   margin-left: -2px; }
@@ -309,7 +313,7 @@ body {
 .education__university-name {
   color: #000000;
   font-family: "Myriad Pro - Regular";
-  font-size: 1.66em;
+  font-size: 1.66rem;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1.45; }
@@ -317,7 +321,7 @@ body {
 .education__description {
   color: #000000;
   font-family: "Myriad Pro - Regular";
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   display: inline-block;
   margin-top: 2.5px;
@@ -357,7 +361,7 @@ body {
 .software__tool {
   color: #000000;
   font-family: "Myriad Pro - Regular";
-  font-size: 1.66em;
+  font-size: 1.66rem;
   font-weight: 400;
   text-transform: uppercase; }
 

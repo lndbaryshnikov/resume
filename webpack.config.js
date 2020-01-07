@@ -15,6 +15,7 @@ module.exports = {
     ],
     output: {
         path: PATHS.dist,
+        publicPath: "./",
         filename: '[name].js'
     },
     plugins: [
