@@ -1,7 +1,7 @@
 include ../common.blocks/header/header
 include ../common.blocks/block-header/block-header
 include ../common.blocks/profile/profile
-include ../common.blocks/contact/contact__content
+include ../common.blocks/contact/contact
 include ../common.blocks/skills/skills__skill
 include ../common.blocks/education/education__item
 include ../common.blocks/software/software__item
@@ -26,12 +26,27 @@ html
 
       section.section-wrapper
         +block-header('contact-icon.png', 'contact')
-        table.contact__table
-          -
-            const contact = [['address', 'Main Street, City.'], ['e-mail', 'contact@domain.com'],
-            ['phone', '555-555-555'], ['website', 'www.yourweb.com']];
-          each item in contact
-            +contact(item[0], item[1])
+        -
+          const contacts = [
+            {
+              type: 'address',
+              data: 'Main Street, City.'
+            },
+            {
+              type: 'e-mail',
+              data: 'contact@domain.com'
+            },
+            {
+              type: 'phone',
+              data: '555-555-555'
+            },
+            {
+              type: 'website',
+              data: 'www.yourweb.com'
+            }
+          ];
+
+        +contact(contacts)
 
       section(class=['section-wrapper', 'section-wrapper_type_for-skills'])
         +block-header('skills-icon.png', 'skills')

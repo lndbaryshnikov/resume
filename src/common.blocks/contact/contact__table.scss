@@ -3,6 +3,19 @@
   margin-top: 12px;
   line-height: 1em;
   margin-left: -2px;
+
+  @media screen and (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1094px) and (min-width: 723px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
 
 
