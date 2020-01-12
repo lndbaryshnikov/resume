@@ -67,6 +67,8 @@ module.exports = {
         ]
     },
     devServer: {
-        stats: 'errors-only'
+        stats: 'errors-only',
+        contentBase: PATHS.dist,
+        compress: true
     }
 };
