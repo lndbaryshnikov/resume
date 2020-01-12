@@ -1,0 +1,6 @@
+include ../contact-item/contact-item
+
+mixin contact(items)
+  table.contact__table
+    each item in items
+      +contact-item(item.type, item.data)
