@@ -1,4 +1,6 @@
+include ../common.blocks/header/header
 include ../common.blocks/block-header/block-header
+include ../common.blocks/profile/profile
 include ../common.blocks/contact/contact__content
 include ../common.blocks/skills/skills__skill
 include ../common.blocks/education/education__item
@@ -16,17 +18,11 @@ html
   body
     .layout-grid
       section(class=['section-wrapper', 'section-wrapper_type_for-header'])
-        .header__disk
-          .header__disk-inner
-        .header__name
-          span.header__name-here name here
-          <br>
-          span.header__surname surname
-        .header__job graphic designer
+        +header
 
       section.section-wrapper
         +block-header('profile-icon.png', 'profile')
-        include ../common.blocks/profile/profile__content
+        +profile
 
       section.section-wrapper
         +block-header('contact-icon.png', 'contact')
