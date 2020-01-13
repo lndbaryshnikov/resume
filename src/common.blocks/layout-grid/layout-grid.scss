@@ -8,17 +8,13 @@
   margin-right: 3.309em;
   margin-top: 4.964em;
   max-height: 4000px*0.55;
-}
 
-@media screen and (max-width: 400px) {
-  .layout-grid {
+  @media screen and (max-width: 400px) {
     margin-left: 8vw;
     margin-right: 8vw;
   }
-}
 
-@media screen and (max-width: 722px) {
-  .layout-grid {
+  @media screen and (max-width: 722px) {
     flex-wrap: nowrap;
   }
 }
