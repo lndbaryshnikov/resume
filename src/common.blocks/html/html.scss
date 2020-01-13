@@ -2,10 +2,10 @@ html {
   font-family: 'Myriad Pro - Regular';
   font-size: calc(9.791px + 0.5vw);
   color: #000000;
-}
 
-@media screen and (max-width: 1094px) {
-  html {
+  @media screen and (max-width: 1094px) {
     font-size: 8.5px + 0.005*1094px;
   }
 }
+
+
