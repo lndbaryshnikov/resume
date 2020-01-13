@@ -1,0 +1,29 @@
+.software-item {
+  margin-bottom: 25px;
+
+  &__tool {
+    color: #000000;
+    font-family: "Myriad Pro - Regular";
+    font-size: 1.66rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__scale {
+    width: 21.75vw;
+    height: 1.772vw;
+    background-color: #e6e6e6;
+    margin-top: 11px;
+    margin-left: 1px;
+
+    @media screen and (max-width: 722px) {
+      width: 50vw;
+      height: 2.5vw;
+    }
+  }
+
+  &__level {
+    background-color: #3d6cb0;
+    height: 100%;
+  }
+}

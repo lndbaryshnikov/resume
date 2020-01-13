@@ -5,7 +5,7 @@ include ../common.blocks/contact/contact
 include ../common.blocks/skills/skills
 include ../common.blocks/education/education
 include ../common.blocks/experience/experience
-include ../common.blocks/software/software__item
+include ../common.blocks/software/software
 
 - const wideWrapperClasses = ['section-wrapper', 'section-wrapper_width_wide'];
 
@@ -114,10 +114,33 @@ html
 
       section(class=wideWrapperClasses class=['section-wrapper_type_for-software'])
         +block-header('software-icon.png', 'software')
-        .software__content-wrapper
-          -
-            const software = [['photoshop', 505/554*100], ['illustrator', 391/554*100],
-            ['indesign', 312/554*100], ['dreamweaver', 461/554*100],
-            ['after effects', 342/554*100], ['html&css3', 505/554*100]];
-          each item in software
-            +software(item[0], item[1])
+        -
+          var softwareItems = [
+            {
+              tool: 'photoshop',
+              possession: 505/554*100
+            },
+            {
+              tool: 'illustrator',
+              possession: 391/554*100
+            },
+            {
+              tool: 'indesign',
+              possession: 312/554*100
+            },
+            {
+              tool: 'dreamweaver',
+              possession: 461/554*100
+            },
+            {
+              tool: 'after effects',
+              possession: 342/554*100
+            },
+            {
+              tool: 'html&css3',
+              possession: 505/554*100
+            }
+          ];
+
+        +software(softwareItems)
+
