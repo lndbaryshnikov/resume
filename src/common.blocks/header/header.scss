@@ -32,18 +32,16 @@
 
   &__name-here {
     color: #000000;
-    font-family: "Myriad Pro - Light Semi Ext";
     font-size: 3.46rem;
-    font-weight: 600;
+    font-weight: 300;
     text-transform: uppercase;
     margin-left: 17.7px;
   }
 
   &__surname {
     color: #000000;
-    font-family: "Myriad Pro - Bold";
+    font-weight: bold;
     font-size: 4.015rem;
-    font-weight: 700;
     text-transform: uppercase;
     margin-left: 15px;
     margin-top: 100px;
@@ -52,7 +50,7 @@
 
   &__job {
     color: #000000;
-    font-family: "Myriad Pro - Bold";
+    font-weight: bold;
     font-size: 1.565rem;
     text-transform: uppercase;
     margin-top: 15.11px*0.55;
