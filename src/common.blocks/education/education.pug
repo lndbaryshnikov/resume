@@ -1,0 +1,19 @@
+include ../education-item/education-item
+
+mixin education(items, mode)
+  - var headClass;
+
+  if mode === 'experience'
+    - headClass = 'education experience'
+  else
+    - headClass = 'education'
+
+  ul(class=headClass)
+    each item in items
+      +education-item(
+        item.degree,
+        item.studyingTime,
+        item.universityName,
+        item.educationDescription,
+        mode
+      )

@@ -1,0 +1,63 @@
+.education-item {
+  &__li {
+    position: relative;
+    margin-bottom: 12.5px;
+
+    &:before {
+      content: "";
+      background-color: black;
+      width: 1.324em;
+      height: 1.324em;
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute;
+      left: -44px;
+      top: 5px;
+    }
+
+    &:nth-child(1) {
+      margin-top: 54px*0.55;
+    }
+
+    &:nth-child(4) {
+      margin-top: -3px;
+    }
+  }
+
+  &__degree {
+    color: #3d6cb0;
+    font-family: "Myriad Pro - Bold";
+    font-size: 1.66rem;
+    text-transform: uppercase;
+    margin-right: 17px;
+  }
+
+  &__studying-time {
+    color: #020202;
+    font-family: "Myriad Pro - Regular";
+    font-size: 1.7rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: -2px;
+  }
+
+  &__university-name {
+    color: #000000;
+    font-family: "Myriad Pro - Regular";
+    font-size: 1.66rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.45;
+  }
+
+  &__description {
+    color: #000000;
+    font-family: "Myriad Pro - Regular";
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 2.5px;
+    margin-left: 2px;
+    line-height: 1.255;
+  }
+}

@@ -1,0 +1,15 @@
+mixin education-item(degree, studyingTime, universityName, educationDescription, mode)
+  - var firstClass;
+
+  if mode === 'experience'
+    - firstClass = 'education-item__degree experience__company-name'
+  else
+    - firstClass = 'education-item__degree'
+
+  li.education-item__li
+    | <span class="#{firstClass}">#{degree}</span>
+    | <span class="education-item__studying-time">//#{studyingTime}</span>
+    | <br>
+    | <span class="education-item__university-name">#{universityName}</span>
+    | <br>
+    | <span class="education-item__description">#{educationDescription}</span>

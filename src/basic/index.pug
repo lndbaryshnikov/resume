@@ -3,7 +3,8 @@ include ../common.blocks/block-header/block-header
 include ../common.blocks/profile/profile
 include ../common.blocks/contact/contact
 include ../common.blocks/skills/skills
-include ../common.blocks/education/education__item
+include ../common.blocks/education/education
+include ../common.blocks/experience/experience
 include ../common.blocks/software/software__item
 
 - const wideWrapperClasses = ['section-wrapper', 'section-wrapper_width_wide'];
@@ -74,15 +75,42 @@ html
 
       section(class=wideWrapperClasses)
         +block-header('education-icon.png', 'education')
-        ul.education__ul
-          - for (let i = 0; i < 4; i++)
-            +education('master degree', 'Feb 2011 - Jun 2014', 'university name')
+        -
+          var educationDescription = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ' +
+          'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis ' +
+          'dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+
+          var educationItem = {
+            degree: 'master degree',
+            studyingTime: 'Feb 2011 - Jun 2014',
+            universityName: 'university name',
+            educationDescription: educationDescription
+          }
+
+        +education([
+          educationItem,
+          educationItem,
+          educationItem,
+          educationItem
+        ])
+
+
 
       section(class=wideWrapperClasses class=['section-wrapper_type_for-experience'])
         +block-header('experience-icon.png', 'experience')
-        ul(class=['education__ul', 'experience__ul'])
-          - for (let i = 0; i < 3; i++)
-            +education('company name', 'Feb 2011 - Jun 2014', 'your job here', 'job')
+        -
+          var experienceItem = {
+            degree: 'company name',
+            studyingTime: 'Feb 2011 - Jun 2014',
+            universityName: 'your job here',
+            educationDescription: educationDescription
+          }
+
+        +experience([
+          experienceItem,
+          experienceItem,
+          experienceItem
+        ])
 
       section(class=wideWrapperClasses class=['section-wrapper_type_for-software'])
         +block-header('software-icon.png', 'software')
