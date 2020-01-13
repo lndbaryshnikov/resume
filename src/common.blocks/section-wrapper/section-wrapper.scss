@@ -1,10 +1,42 @@
 .section-wrapper {
   width: 36.75%;
   margin-bottom: 90px*0.55;
-}
 
-@media screen and (max-width: 722px) {
-  .section-wrapper {
+  @media screen and (max-width: 722px) {
     width: 100%;
   }
+
+  &_width {
+    &_wide {
+      width: 56%;
+      margin-right: 4px;
+
+      @media screen and (max-width: 722px) {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &_type {
+    &_for-header {
+      margin-bottom: 150px*0.55;
+    }
+
+    &_for-experience {
+      margin-top: -10px;
+    }
+
+    &_for-skills {
+      margin-top: -11px;
+    }
+
+    &_for-software {
+      margin-top: -6px;
+    }
+  }
+
+
 }
+
+

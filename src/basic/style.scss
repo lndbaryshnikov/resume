@@ -5,16 +5,9 @@
 
 @import '../common.blocks/layout-grid/layout-grid';
 
-@import '../common.blocks/header/header__disk';
-@import '../common.blocks/header/header__disk-inner';
-@import '../common.blocks/header/header__name';
-@import '../common.blocks/header/header__name-here';
-@import '../common.blocks/header/header__surname';
-@import '../common.blocks/header/header__job';
+@import '../common.blocks/header/header';
 
 @import '../common.blocks/section-wrapper/section-wrapper';
-@import '../common.blocks/section-wrapper/section-wrapper_type_for-header';
-@import '../common.blocks/section-wrapper/section-wrapper_width_wide';
 
 @import '../common.blocks/block-header/block-header__wrapper';
 @import '../common.blocks/block-header/block-header__name';
@@ -25,16 +18,10 @@
 
 @import '../common.blocks/contact/contact';
 
-@import '../common.blocks/section-wrapper/section-wrapper_type_for-skills';
-
 @import '../common.blocks/skills/skills';
 
 @import '../common.blocks/education/education';
 
-@import '../common.blocks/section-wrapper/section-wrapper_type_for-experience';
-
 @import '../common.blocks/experience/experience';
-
-@import '../common.blocks/section-wrapper/section-wrapper_type_for-software';
 
 @import '../common.blocks/software/software';
