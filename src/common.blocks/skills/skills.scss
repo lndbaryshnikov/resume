@@ -1,4 +1,6 @@
-.skills__content {
+@import '../skills-item/skills-item';
+
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;

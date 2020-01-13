@@ -1,0 +1,32 @@
+.skills-item {
+  &__name {
+    color: #000000;
+    font-family: "Myriad Pro - Regular";
+    font-size: 1.68rem;
+    text-transform: uppercase;
+    margin-bottom: 7.8px;
+    margin-left: 2.5px;
+  }
+
+  &__level {
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    margin-bottom: 22px;
+
+    @media screen and (max-width: 722px) {
+      width: 50vw;
+    }
+  }
+
+  &__point {
+    width: 1.092em;
+    height: 1.092em;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+  }
+
+  &__point_checked {
+    background-color: #3d6cb0;
+  }
+}

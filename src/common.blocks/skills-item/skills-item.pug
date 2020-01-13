@@ -1,0 +1,14 @@
+mixin skills-item(skill_name, level)
+  - var checked = +level
+  - var notChecked = 12 - checked;
+
+  .skills-item__name= skill_name
+  .skills-item__level
+    while checked > 0
+      div(class=['skills-item__point', 'skills-item__point_checked'])
+      - checked--
+
+    while notChecked > 0
+      div(class=['skills-item__point'])
+      - notChecked--
+

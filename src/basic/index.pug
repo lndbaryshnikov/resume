@@ -2,7 +2,7 @@ include ../common.blocks/header/header
 include ../common.blocks/block-header/block-header
 include ../common.blocks/profile/profile
 include ../common.blocks/contact/contact
-include ../common.blocks/skills/skills__skill
+include ../common.blocks/skills/skills
 include ../common.blocks/education/education__item
 include ../common.blocks/software/software__item
 
@@ -27,7 +27,7 @@ html
       section.section-wrapper
         +block-header('contact-icon.png', 'contact')
         -
-          const contacts = [
+          const contactsItems = [
             {
               type: 'address',
               data: 'Main Street, City.'
@@ -46,14 +46,31 @@ html
             }
           ];
 
-        +contact(contacts)
+        +contact(contactsItems)
 
       section(class=['section-wrapper', 'section-wrapper_type_for-skills'])
         +block-header('skills-icon.png', 'skills')
-        .skills__content
-          - const skills = [['creative', '9'], ['teamwork', '11'], ['innovate', '6'], ['communication', '11']];
-          each item in skills
-            +skill(item[0], item[1])
+        -
+          const skillsItems = [
+            {
+              name: 'creative',
+              level: '9'
+            },
+            {
+              name: 'teamwork',
+              level: '11'
+            },
+            {
+              name: 'innovate',
+              level: '6'
+            },
+            {
+              name: 'communication',
+              level: '11'
+            }
+          ];
+
+        +skills(skillsItems)
 
       section(class=wideWrapperClasses)
         +block-header('education-icon.png', 'education')

@@ -23,15 +23,11 @@
 
 @import '../common.blocks/profile/profile__content';
 
-@import "../common.blocks/contact/contact";
+@import '../common.blocks/contact/contact';
 
 @import '../common.blocks/section-wrapper/section-wrapper_type_for-skills';
 
-@import '../common.blocks/skills/skills__content';
-@import '../common.blocks/skills/skills__name';
-@import '../common.blocks/skills/skills__level';
-@import '../common.blocks/skills/skills__point/skills__point';
-@import '../common.blocks/skills/skills__point/skills__point_checked';
+@import '../common.blocks/skills/skills';
 
 @import '../common.blocks/education/education__ul';
 @import '../common.blocks/education/education__li';
