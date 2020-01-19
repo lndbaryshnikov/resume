@@ -1,0 +1,76 @@
+html {
+  font-family: 'Myriad Pro', 'Arial', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: calc(9.791px + 0.5vw);
+  color: #000000;
+
+  @media screen and (max-width: 1094px) {
+    font-size: 8.5px + 0.005*1094px;
+  }
+}
+
+body {
+  max-width: 1920px;
+}
+
+.section-wrapper {
+  width: 36.75%;
+  margin-bottom: 90px*0.55;
+
+  @media screen and (max-width: 722px) {
+    width: 100%;
+  }
+
+  &_width {
+    &_wide {
+      width: 56%;
+      margin-right: 4px;
+
+      @media screen and (max-width: 722px) {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &_type {
+    &_for-header {
+      margin-bottom: 150px*0.55;
+    }
+
+    &_for-experience {
+      margin-top: -10px;
+    }
+
+    &_for-skills {
+      margin-top: -11px;
+    }
+
+    &_for-software {
+      margin-top: -6px;
+    }
+  }
+}
+
+.layout-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-left: 3.805em;
+  margin-right: 3.309em;
+  margin-top: 4.964em;
+  max-height: 4000px*0.55;
+
+  @media screen and (max-width: 400px) {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  @media screen and (max-width: 722px) {
+    flex-wrap: nowrap;
+  }
+}
+
