@@ -1,14 +1,7 @@
-@import '../education-item/education-item';
+@import '../progress-list/progress-list';
 
 .education {
-  list-style-type: none;
-  width: 90%;
   margin-left: 15px;
   margin-top: -2.5px;
-
-  @media screen and (max-width: 722px) {
-    margin-left: 5px;
-  }
+  width: 100%;
 }
-
-

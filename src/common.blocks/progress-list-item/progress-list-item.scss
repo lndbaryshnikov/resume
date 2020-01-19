@@ -1,4 +1,4 @@
-.education-item {
+.progress-list-item {
   position: relative;
   margin-bottom: 12.5px;
 
@@ -22,22 +22,31 @@
     margin-top: -3px;
   }
 
-  &__degree {
-    color: #3d6cb0;
+  &__name {
     font-weight: bold;
     font-size: 1.66rem;
     text-transform: uppercase;
     margin-right: 17px;
+
+    &_color {
+      &_blue {
+        color: #3d6cb0;
+      }
+
+      &_black {
+        color: black;
+      }
+    }
   }
 
-  &__studying-time {
+  &__period {
     color: #020202;
     font-size: 1.7rem;
     display: inline-block;
     margin-left: -2px;
   }
 
-  &__university-name {
+  &__title {
     color: #000000;
     font-size: 1.66rem;
     text-transform: uppercase;

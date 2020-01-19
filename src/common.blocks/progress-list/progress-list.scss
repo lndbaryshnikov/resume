@@ -1,0 +1,12 @@
+@import '../progress-list-item/progress-list-item';
+
+.progress-list {
+  list-style-type: none;
+  width: 90%;
+
+  @media screen and (max-width: 722px) {
+    margin-left: 5px;
+  }
+}
+
+

@@ -1,9 +1,7 @@
-@import '../education/education';
+@import '../progress-list/progress-list';
 
 .experience {
+  margin-left: 15px;
   margin-top: 42px;
-
-  &__company-name {
-    color: black;
-  }
+  width: 100%;
 }

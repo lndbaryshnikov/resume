@@ -1,0 +1,6 @@
+include ../progress-list-item/progress-list-item
+
+mixin progress-list(items)
+  ul.progress-list
+    each item in items
+      +progress-list-item(item)

@@ -81,10 +81,11 @@ html
           'dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
 
           var educationItem = {
-            degree: 'master degree',
-            studyingTime: 'Feb 2011 - Jun 2014',
-            universityName: 'university name',
-            educationDescription: educationDescription
+            name: 'master degree',
+            period: 'Feb 2011 - Jun 2014',
+            title: 'university name',
+            description: educationDescription,
+            nameColor: 'blue'
           }
 
         +education([
@@ -100,10 +101,11 @@ html
         +block-header('experience-icon.png', 'experience')
         -
           var experienceItem = {
-            degree: 'company name',
-            studyingTime: 'Feb 2011 - Jun 2014',
-            universityName: 'your job here',
-            educationDescription: educationDescription
+            name: 'company name',
+            period: 'Feb 2011 - Jun 2014',
+            title: 'your job here',
+            description: educationDescription,
+            nameColor: 'black'
           }
 
         +experience([
