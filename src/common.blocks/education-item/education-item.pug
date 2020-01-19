@@ -6,7 +6,7 @@ mixin education-item(degree, studyingTime, universityName, educationDescription,
   else
     - firstClass = 'education-item__degree'
 
-  li.education-item__li
+  li.education-item
     | <span class="#{firstClass}">#{degree}</span>
     | <span class="education-item__studying-time">//#{studyingTime}</span>
     | <br>

@@ -1,4 +1,7 @@
 .skills-item {
+  width: 100%;
+  text-align: center;
+
   &__name {
     color: #000000;
     font-size: 1.68rem;
@@ -8,10 +11,10 @@
   }
 
   &__level {
+    margin: 0 auto 22px;
     display: flex;
     justify-content: space-between;
     width: 78%;
-    margin-bottom: 22px;
 
     @media screen and (max-width: 722px) {
       width: 50vw;

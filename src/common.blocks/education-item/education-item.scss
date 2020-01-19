@@ -1,27 +1,25 @@
 .education-item {
-  &__li {
-    position: relative;
-    margin-bottom: 12.5px;
+  position: relative;
+  margin-bottom: 12.5px;
 
-    &:before {
-      content: "";
-      background-color: black;
-      width: 1.324em;
-      height: 1.324em;
-      display: inline-block;
-      border-radius: 50%;
-      position: absolute;
-      left: -44px;
-      top: 5px;
-    }
+  &:before {
+    content: "";
+    background-color: black;
+    width: 1.324em;
+    height: 1.324em;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    left: -44px;
+    top: 5px;
+  }
 
-    &:nth-child(1) {
-      margin-top: 54px*0.55;
-    }
+  &:nth-child(1) {
+    margin-top: 54px*0.55;
+  }
 
-    &:nth-child(4) {
-      margin-top: -3px;
-    }
+  &:nth-child(4) {
+    margin-top: -3px;
   }
 
   &__degree {
