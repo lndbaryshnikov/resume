@@ -22,11 +22,17 @@ html
         +header
 
       section.section-wrapper
-        +block-header('profile-icon.png', 'profile')
+        +block-header({
+          iconName: 'profile-icon.png',
+          blockName: 'profile'
+        })
         +profile
 
       section.section-wrapper
-        +block-header('contact-icon.png', 'contact')
+        +block-header({
+          iconName: 'contact-icon.png',
+          blockName: 'contact'
+        })
         -
           const contactsItems = [
             {
@@ -50,7 +56,10 @@ html
         +contact(contactsItems)
 
       section(class=['section-wrapper', 'section-wrapper_type_for-skills'])
-        +block-header('skills-icon.png', 'skills')
+        +block-header({
+          iconName: 'skills-icon.png',
+          blockName: 'skills'
+        })
         -
           const skillsItems = [
             {
@@ -74,7 +83,10 @@ html
         +skills(skillsItems)
 
       section(class=wideWrapperClasses)
-        +block-header('education-icon.png', 'education')
+        +block-header({
+          iconName: 'education-icon.png',
+          blockName: 'education'
+        })
         -
           var educationDescription = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ' +
           'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis ' +
@@ -98,7 +110,10 @@ html
 
 
       section(class=wideWrapperClasses class=['section-wrapper_type_for-experience'])
-        +block-header('experience-icon.png', 'experience')
+        +block-header({
+          iconName: 'experience-icon.png',
+          blockName: 'experience'
+        })
         -
           var experienceItem = {
             name: 'company name',
@@ -115,7 +130,10 @@ html
         ])
 
       section(class=wideWrapperClasses class=['section-wrapper_type_for-software'])
-        +block-header('software-icon.png', 'software')
+        +block-header({
+          iconName: 'software-icon.png',
+          blockName: 'software'
+        })
         -
           var softwareItems = [
             {

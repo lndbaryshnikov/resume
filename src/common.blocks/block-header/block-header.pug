@@ -1,4 +1,4 @@
-mixin block-header(iconName, blockName)
+mixin block-header({ iconName, blockName })
   header.block-header
     img.block-header__icon(src=require(`../img/icons/${iconName}`) alt=blockName)
     div.block-header__name= blockName
