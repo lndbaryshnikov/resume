@@ -1,9 +1,11 @@
+@import '../../styles/colors';
+
 .skills-item {
   width: 100%;
   text-align: center;
 
   &__name {
-    color: #000000;
+    color: $black;
     font-size: 1.68rem;
     text-transform: uppercase;
     margin-bottom: 7.8px;
@@ -24,11 +26,11 @@
   &__point {
     width: 1.092em;
     height: 1.092em;
-    background-color: #e6e6e6;
+    background-color: $light-gray;
     border-radius: 50%;
   }
 
   &__point_checked {
-    background-color: #3d6cb0;
+    background-color: $blue;
   }
 }

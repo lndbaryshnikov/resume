@@ -1,8 +1,10 @@
+@import '../../styles/colors';
+
 .software-item {
   margin-bottom: 25px;
 
   &__tool {
-    color: #000000;
+    color: $black;
     font-size: 1.66rem;
     text-transform: uppercase;
   }
@@ -10,7 +12,7 @@
   &__scale {
     width: 21.75vw;
     height: 1.772vw;
-    background-color: #e6e6e6;
+    background-color: $light-gray;
     margin-top: 11px;
     margin-left: 1px;
 
@@ -21,7 +23,7 @@
   }
 
   &__level {
-    background-color: #3d6cb0;
+    background-color: $blue;
     height: 100%;
   }
 }

@@ -1,10 +1,13 @@
+@import '../../styles/colors';
+
 .progress-list-item {
   position: relative;
   margin-bottom: 12.5px;
+  color: $black;
 
   &:before {
     content: "";
-    background-color: black;
+    background-color: $black;
     width: 1.324em;
     height: 1.324em;
     display: inline-block;
@@ -30,31 +33,28 @@
 
     &_color {
       &_blue {
-        color: #3d6cb0;
+        color: $blue;
       }
 
       &_black {
-        color: black;
+        color: inherit;
       }
     }
   }
 
   &__period {
-    color: #020202;
     font-size: 1.7rem;
     display: inline-block;
     margin-left: -2px;
   }
 
   &__title {
-    color: #000000;
     font-size: 1.66rem;
     text-transform: uppercase;
     line-height: 1.45;
   }
 
   &__description {
-    color: #000000;
     font-size: 1rem;
     display: inline-block;
     margin-top: 2.5px;
