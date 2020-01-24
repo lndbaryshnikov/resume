@@ -1,9 +1,7 @@
 mixin software-item({ tool, possession })
-  - var possess = +possession
-
   .software-item
     .software-item__tool= tool
     .software-item__scale
-      div(class='software-item__level' style={width: `${possess}%`})
+      div(class='software-item__level' style={width: `${+possession}%`})
 
 
