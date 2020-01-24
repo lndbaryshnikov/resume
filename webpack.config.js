@@ -11,7 +11,6 @@ const PATHS = {
 module.exports = {
     entry: [
         PATHS.src + '/index.js',
-        PATHS.src + '/style.scss'
     ],
     output: {
         path: PATHS.dist,
