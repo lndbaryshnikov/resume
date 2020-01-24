@@ -1,8 +1,8 @@
 mixin progress-list-item({ name, period, title, description, nameColor })
   li.progress-list-item
-    | <span class="progress-list-item__name progress-list-item__name_color_#{nameColor}">#{name}</span>
-    | <span class="progress-list-item__period">//#{period}</span>
-    | <br>
-    | <span class="progress-list-item__title">#{title}</span>
-    | <br>
-    | <span class="progress-list-item__description">#{description}</span>
+    span(class=["progress-list-item__name", `progress-list-item__name_color_#{nameColor}`])= name
+    span.progress-list-item__period // #{period}
+    br
+    span.progress-list-item__title= title
+    br
+    span.progress-list-item__description= description
