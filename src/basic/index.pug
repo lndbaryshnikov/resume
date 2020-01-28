@@ -41,15 +41,18 @@ html
             },
             {
               type: 'e-mail',
-              data: 'contact@domain.com'
+              data: 'contact@domain.com',
+              attr: 'mailto'
             },
             {
               type: 'phone',
-              data: '555-555-555'
+              data: '555-555-555',
+              attr: 'tel'
             },
             {
               type: 'website',
-              data: 'www.yourweb.com'
+              data: 'www.yourweb.com',
+              attr: 'site'
             }
           ];
 
@@ -106,8 +109,6 @@ html
           educationItem,
           educationItem
         ])
-
-
 
       section(class=wideWrapperClasses class=['section-wrapper_type_for-experience'])
         +block-header({
