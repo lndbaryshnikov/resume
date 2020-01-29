@@ -1,8 +1,6 @@
 @import '../../styles/colors';
 
 .software-item {
-  margin-bottom: 25px;
-
   &__tool {
     color: $black;
     font-size: 1.66rem;
@@ -13,8 +11,9 @@
     width: 21.75vw;
     height: 1.772vw;
     background-color: $light-gray;
-    margin-top: 11px;
+    margin-top: 12px;
     margin-left: 1px;
+    margin-bottom: 25px;
 
     @media screen and (max-width: 722px) {
       width: 50vw;

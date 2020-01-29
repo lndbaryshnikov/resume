@@ -40,7 +40,7 @@ body {
     }
 
     &_for-experience {
-      margin-top: -10px;
+      margin-top: -20px;
     }
 
     &_for-skills {
@@ -48,7 +48,39 @@ body {
     }
 
     &_for-software {
-      margin-top: -6px;
+      margin-top: -20px;
+    }
+  }
+
+  &__content {
+    &_type {
+      &_for-education {
+        width: 100%;
+        margin-left: 15px;
+        margin-top: -2.5px;
+      }
+
+      &_for-experience {
+        margin-left: 15px;
+        margin-top: 42px;
+        width: 100%;
+      }
+
+      &_for-profile {
+        margin-top: 12.7px;
+        margin-left: 0.35px;
+      }
+
+      &_for-skills {
+        margin-top: 29*0.774px;
+      }
+
+      &_for-software {
+        margin-top: 25px;
+        margin-left: 5.5px;
+        margin-right: 0.5px;
+        width: 100%;
+      }
     }
   }
 }

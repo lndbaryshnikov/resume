@@ -26,7 +26,8 @@ html
           iconName: 'profile-icon.png',
           blockName: 'profile'
         })
-        +profile
+        .section-wrapper__content_type_for-profile
+          +profile
 
       section.section-wrapper
         +block-header({
@@ -83,9 +84,10 @@ html
             }
           ];
 
-        +skills(skillsItems)
+        .section-wrapper__content_type_for-skills
+          +skills(skillsItems)
 
-      section(class=wideWrapperClasses)
+      section(class=wideWrapperClasses, class=["section-wrapper_type_for-education"])
         +block-header({
           iconName: 'education-icon.png',
           blockName: 'education'
@@ -103,12 +105,13 @@ html
             nameColor: 'blue'
           }
 
-        +education([
-          educationItem,
-          educationItem,
-          educationItem,
-          educationItem
-        ])
+        .section-wrapper__content_type_for-education
+          +education([
+            educationItem,
+            educationItem,
+            educationItem,
+            educationItem
+          ])
 
       section(class=wideWrapperClasses class=['section-wrapper_type_for-experience'])
         +block-header({
@@ -124,11 +127,12 @@ html
             nameColor: 'black'
           }
 
-        +experience([
-          experienceItem,
-          experienceItem,
-          experienceItem
-        ])
+        .section-wrapper__content_type_for-experience
+          +experience([
+            experienceItem,
+            experienceItem,
+            experienceItem
+          ])
 
       section(class=wideWrapperClasses class=['section-wrapper_type_for-software'])
         +block-header({
@@ -163,5 +167,6 @@ html
             }
           ];
 
-        +software(softwareItems)
+        .section-wrapper__content_type_for-software
+          +software(softwareItems)
 

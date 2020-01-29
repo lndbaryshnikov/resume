@@ -2,7 +2,6 @@
 
 .progress-list-item {
   position: relative;
-  margin-bottom: 12.5px;
   color: $black;
 
   &:before {
@@ -59,7 +58,7 @@
     display: inline-block;
     margin-top: 2.5px;
     margin-left: 2px;
-    margin-bottom: 0;
+    margin-bottom: 12px;
     line-height: 1.255;
   }
 }
