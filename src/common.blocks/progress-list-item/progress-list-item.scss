@@ -20,15 +20,14 @@
     margin-top: 54px*0.55;
   }
 
-  &:nth-child(4) {
-    margin-top: -3px;
+  &:nth-child(3) {
   }
 
   &__name {
     font-weight: bold;
     font-size: 1.66rem;
     text-transform: uppercase;
-    margin-right: 17px;
+    margin-right: 15px;
 
     &_color {
       &_blue {
@@ -44,7 +43,6 @@
   &__period {
     font-size: 1.7rem;
     display: inline-block;
-    margin-left: -2px;
   }
 
   &__title {
@@ -60,5 +58,9 @@
     margin-left: 2px;
     margin-bottom: 12px;
     line-height: 1.255;
+
+    &:nth-child(3) {
+      margin-bottom: 11px;
+    }
   }
 }
