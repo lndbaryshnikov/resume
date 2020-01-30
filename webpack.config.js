@@ -22,7 +22,7 @@ module.exports = {
             template: PATHS.src + '/index.pug',
         }),
         new ExtractTextPlugin('./style.css'),
-        new FaviconsWebpackPlugin('./src/img/icons/software-icon.png')
+        new FaviconsWebpackPlugin('./src/img/favicon.png')
     ],
     module: {
         rules: [
@@ -71,7 +71,7 @@ module.exports = {
             },
             {
                 test: /\.(jpg|png|svg)$/,
-                include: path.resolve(__dirname, 'src/img'),
+                include: path.resolve(__dirname, 'src'),
                 loader: 'file-loader',
                 options: {
                     name: 'images/[name].[ext]'
