@@ -16,7 +16,7 @@ body {
 
 .section-wrapper {
   width: 36.5%;
-  margin-bottom: 90px*0.55;
+  margin-bottom: 49.5px;
 
   @media screen and (max-width: 722px) {
     width: 100%;
@@ -46,10 +46,10 @@ body {
 
     &_for-contact {
       margin-left: 3px;
+      margin-bottom: 38.5px;
     }
 
     &_for-skills {
-      margin-top: -11px;
       margin-left: 3px;
     }
 
@@ -59,12 +59,8 @@ body {
       }
     }
 
-    &_for-experience {
-      margin-top: -18px;
-    }
-
-    &_for-software {
-      margin-top: -18px;
+    &_for-education, &_for-experience {
+      margin-bottom: 31.5px;
     }
   }
 
@@ -83,7 +79,6 @@ body {
       &_for-education {
         width: 100%;
         margin-left: 15px;
-        margin-top: -2.5px;
       }
 
       &_for-experience {
