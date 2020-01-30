@@ -15,7 +15,7 @@ body {
 }
 
 .section-wrapper {
-  width: 36.75%;
+  width: 36.5%;
   margin-bottom: 90px*0.55;
 
   @media screen and (max-width: 722px) {
@@ -25,7 +25,7 @@ body {
   &_width {
     &_wide {
       width: 56%;
-      margin-right: 4px;
+      margin-right: 2px;
 
       @media screen and (max-width: 722px) {
         width: 100%;
@@ -37,18 +37,44 @@ body {
   &_type {
     &_for-header {
       margin-bottom: 150px*0.55;
+      margin-left: 6px;
+    }
+
+    &_for-profile {
+      margin-left: 4px;
+    }
+
+    &_for-contact {
+      margin-left: 3px;
+    }
+
+    &_for-skills {
+      margin-top: -11px;
+      margin-left: 3px;
+    }
+
+    &_for-header, &_for-profile, &_for-contact, &_for-skills {
+      @media screen and (max-width: 722px) {
+        margin-left: 0px;
+      }
     }
 
     &_for-experience {
       margin-top: -20px;
     }
 
-    &_for-skills {
-      margin-top: -11px;
-    }
-
     &_for-software {
       margin-top: -20px;
+    }
+  }
+
+  &__header {
+    &_type_for-contact {
+      margin-left: 2px;
+
+      @media screen and (max-width: 722px) {
+        margin-left: 0px;
+      }
     }
   }
 
@@ -76,7 +102,7 @@ body {
       }
 
       &_for-software {
-        margin-top: 25px;
+        margin-top: 26px;
         margin-left: 5.5px;
         margin-right: 0.5px;
         width: 100%;
@@ -91,7 +117,7 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: space-between;
-  margin-left: 3.805em;
+  margin-left: 3.5em;
   margin-right: 3.309em;
   margin-top: 4.964em;
   max-height: 4000px*0.55;
