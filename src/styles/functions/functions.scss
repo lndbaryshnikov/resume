@@ -1,0 +1,3 @@
+@function countRem($sizeInPixels) {
+  @return $sizeInPixels / 16 * 1rem
+}
