@@ -7,24 +7,24 @@ include ../common.blocks/education/education
 include ../common.blocks/experience/experience
 include ../common.blocks/software/software
 
-- const wideWrapperClasses = ['section-wrapper', 'section-wrapper_width_wide'];
+- const wideWrapperClasses = ["section-wrapper", "section-wrapper_width_wide"];
 
 doctype html
 html
   head
-    meta(charset = 'utf-8')
+    meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(name="description" content="Adaptive resume template")
     title Resume
   body
     .layout-grid
-      section(class=['section-wrapper', 'section-wrapper_type_for-header'])
+      section(class=["section-wrapper", "section-wrapper_type_for-header"])
         +header
 
       section.section-wrapper.section-wrapper_type_for-profile
         +block-header({
-          iconName: 'profile-icon.png',
-          blockName: 'profile'
+          iconName: "profile-icon.png",
+          blockName: "profile"
         })
         .section-wrapper__content_type_for-profile
           +profile
@@ -32,57 +32,57 @@ html
       section.section-wrapper.section-wrapper_type_for-contact
         .section-wrapper__header_type_for-contact
           +block-header({
-            iconName: 'contact-icon.png',
-            blockName: 'contact'
+            iconName: "contact-icon.png",
+            blockName: "contact"
           })
 
         -
           const contactsItems = [
             {
-              type: 'address',
-              data: 'Main Street, City.'
+              type: "address",
+              data: "Main Street, City."
             },
             {
-              type: 'e-mail',
-              data: 'contact@domain.com',
-              attr: 'mailto'
+              type: "e-mail",
+              data: "contact@domain.com",
+              attr: "mailto"
             },
             {
-              type: 'phone',
-              data: '555-555-555',
-              attr: 'tel'
+              type: "phone",
+              data: "555-555-555",
+              attr: "tel"
             },
             {
-              type: 'website',
-              data: 'www.yourweb.com',
-              attr: 'site'
+              type: "website",
+              data: "www.yourweb.com",
+              attr: "site"
             }
           ];
 
         +contact(contactsItems)
 
-      section(class=['section-wrapper', 'section-wrapper_type_for-skills'])
+      section(class=["section-wrapper", "section-wrapper_type_for-skills"])
         +block-header({
-          iconName: 'skills-icon.png',
+          iconName: "skills-icon.png",
           blockName: 'skills'
         })
         -
           const skillsItems = [
             {
-              name: 'creative',
-              level: '9'
+              name: "creative",
+              level: "9"
             },
             {
-              name: 'teamwork',
-              level: '11'
+              name: "teamwork",
+              level: "11"
             },
             {
-              name: 'innovate',
-              level: '6'
+              name: "innovate",
+              level: "6"
             },
             {
-              name: 'communication',
-              level: '11'
+              name: "communication",
+              level: "11"
             }
           ];
 
@@ -91,20 +91,20 @@ html
 
       section(class=wideWrapperClasses, class=["section-wrapper_type_for-education"])
         +block-header({
-          iconName: 'education-icon.png',
-          blockName: 'education'
+          iconName: "education-icon.png",
+          blockName: "education"
         })
         -
-          var educationDescription = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ' +
-          'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis ' +
-          'dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+          var educationDescription = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
+          "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis " +
+          "dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
 
           var educationItem = {
-            name: 'master degree',
-            period: 'Feb 2011 - Jun 2014',
-            title: 'university name',
+            name: "master degree",
+            period: "Feb 2011 - Jun 2014",
+            title: "university name",
             description: educationDescription,
-            nameColor: 'blue'
+            nameColor: "blue"
           }
 
         .section-wrapper__content_type_for-education
@@ -115,18 +115,18 @@ html
             educationItem
           ])
 
-      section(class=wideWrapperClasses class=['section-wrapper_type_for-experience'])
+      section(class=wideWrapperClasses class=["section-wrapper_type_for-experience"])
         +block-header({
-          iconName: 'experience-icon.png',
-          blockName: 'experience'
+          iconName: "experience-icon.png",
+          blockName: "experience"
         })
         -
           var experienceItem = {
-            name: 'company name',
-            period: 'Feb 2011 - Jun 2014',
-            title: 'your job here',
+            name: "company name",
+            period: "Feb 2011 - Jun 2014",
+            title: "your job here",
             description: educationDescription,
-            nameColor: 'black'
+            nameColor: "black"
           }
 
         .section-wrapper__content_type_for-experience
@@ -136,39 +136,38 @@ html
             experienceItem
           ])
 
-      section(class=wideWrapperClasses class=['section-wrapper_type_for-software'])
+      section(class=wideWrapperClasses class=["section-wrapper_type_for-software"])
         +block-header({
-          iconName: 'software-icon.png',
-          blockName: 'software'
+          iconName: "software-icon.png",
+          blockName: "software"
         })
         -
           var softwareItems = [
             {
-              tool: 'photoshop',
+              tool: "photoshop",
               possession: 505/554*100
             },
             {
-              tool: 'illustrator',
+              tool: "illustrator",
               possession: 391/554*100
             },
             {
-              tool: 'indesign',
+              tool: "indesign",
               possession: 312/554*100
             },
             {
-              tool: 'dreamweaver',
+              tool: "dreamweaver",
               possession: 461/554*100
             },
             {
-              tool: 'after effects',
+              tool: "after effects",
               possession: 342/554*100
             },
             {
-              tool: 'html&css3',
+              tool: "html&css3",
               possession: 505/554*100
             }
           ];
 
         .section-wrapper__content_type_for-software
           +software(softwareItems)
-

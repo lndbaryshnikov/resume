@@ -5,10 +5,10 @@ mixin skills-item({ name, level, maxLevel = 12 })
     .skills-item__name= name
     .skills-item__level
       while level > 0
-        div(class=['skills-item__point', 'skills-item__point_checked'])
+        div(class=["skills-item__point", "skills-item__point_checked"])
         - level--
 
       while notChecked > 0
-        div(class=['skills-item__point'])
+        div(class=["skills-item__point"])
         - notChecked--
 
