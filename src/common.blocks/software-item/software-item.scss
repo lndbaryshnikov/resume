@@ -11,13 +11,43 @@
     width: 21.75vw;
     height: 1.772vw;
     background-color: $light-gray;
-    margin-top: 12px;
-    margin-left: 1px;
-    margin-bottom: 25px;
+    margin-top: 0.708rem;
+    margin-left: 0.059rem;
+    margin-bottom: 1.475rem;
 
     @media screen and (max-width: 722px) {
       width: 50vw;
       height: 2.5vw;
+    }
+
+    &_child-number {
+      &_first {
+        margin-top: 0.75rem;
+      }
+
+      &_second {
+        margin-top: 0.63rem;
+      }
+
+      &_third {
+        margin-top: 0.5rem;
+      }
+
+      &_fourth {
+        margin-left: 0;
+        margin-right: 0.1rem;
+        margin-top: 0.8rem;
+      }
+
+      &_fifth {
+        margin-top: 0.6rem;
+        margin-left: 0;
+      }
+
+      &_sixth {
+        margin-top: 0.5rem;
+        margin-left: 0;
+      }
     }
   }
 

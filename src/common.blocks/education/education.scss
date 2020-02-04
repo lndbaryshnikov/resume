@@ -2,11 +2,11 @@
 
 .education {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 0.68rem;
 
   &__list {
     @media screen and (max-width: 722px) {
-      margin-left: 5px;
+      margin-left: 0.357rem;
     }
   }
 }

@@ -8,12 +8,13 @@
     color: $black;
     font-size: 1.68rem;
     text-transform: uppercase;
-    margin-bottom: 7.8px;
-    margin-left: 5px;
+    margin-bottom: 0.5rem;
+    margin-left: 0.27rem;
+    letter-spacing: -0.02rem;
   }
 
   &__level {
-    margin: 0 auto 22px;
+    margin: 0 auto 1.298rem;
     display: flex;
     justify-content: space-between;
     width: 78%;
@@ -24,8 +25,8 @@
   }
 
   &__point {
-    width: 1.092em;
-    height: 1.092em;
+    width: 1.092rem;
+    height: 1.092rem;
     background-color: $light-gray;
     border-radius: 50%;
   }

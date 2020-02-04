@@ -1,6 +1,7 @@
 include ../progress-list-item/progress-list-item
 
-mixin progress-list(items)
+mixin progress-list(items, blockName)
   ul.progress-list
     each item in items
-      +progress-list-item(item)
+      div(class=`progress-list__item progress-list__item_type_for-${blockName}`)
+        +progress-list-item(item)

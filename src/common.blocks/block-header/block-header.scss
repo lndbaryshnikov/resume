@@ -9,31 +9,80 @@
     color: $blue;
     font-weight: bold;
     margin-left: 2.4%;
-    margin-bottom: 4px;
+    margin-bottom: 0.15rem;
     font-size: 2.671rem;
     white-space: nowrap;
     text-transform: uppercase;
+    letter-spacing: -0.02rem;
 
     @media screen and (max-width: 400px) {
-      font-size: 2.2em;
+      font-size: 2.2rem;
+    }
+
+    &_type {
+      &_for-skills {
+        margin-right: 0.45rem;
+      }
+
+      &_for-education {
+        margin-left: 3.1%;
+        margin-bottom: 0.1rem;
+      }
+
+      &_for-experience {
+        margin-left: 2.69%;
+        margin-bottom: 0.05rem;
+      }
+
+      &_for-software {
+        margin: 0.2rem 0.85rem 0 3%;
+      }
     }
   }
 
   &__line {
     width: 100%;
     margin-left: 1.7%;
-    margin-bottom: 5px;
-    margin-right: 1px;
+    margin-bottom: 0.2rem;
     height: 0.45vw;
     background-color: $blue;
+
+    &_type {
+      &_for-experience {
+        margin-left: 0.7%;
+        margin-bottom: 0.14rem;
+        height: 0.4vw;
+      }
+
+      &_for-software {
+        margin-bottom: 0;
+        margin-top: 0.027rem;
+        height: 0.368vw;
+      }
+    }
   }
 
   &__icon {
-    width: 4.78em;
-    max-width: 148px*0.55;
+    width: 4.7rem;
+    max-width: 4.8rem;
 
     @media screen and (max-width: 400px) {
-      width: 3.5em;
+      width: 3.5rem;
+    }
+
+    &_type {
+      &_for-contact {
+        width: 4.65rem;
+        margin-right: 0.05rem;
+      }
+
+      &_for-skills {
+        width: 4.6rem;
+      }
+
+      &_for-experience {
+        width: 5.1rem;
+      }
     }
   }
 }

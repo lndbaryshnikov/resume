@@ -2,5 +2,10 @@ include ../software-item/software-item
 
 mixin software(items)
   .software
-    each item in items
-      +software-item(item)
+    - var childNumbers = []
+
+    if items.length === 6
+      - childNumbers = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth']
+
+    each item, index in items
+      +software-item(item, childNumbers[index])

@@ -4,11 +4,11 @@
   display: flex;
   flex-flow: column wrap;
   align-content: space-between;
-  height: 300px;
-  width: 98.5%;
+  height: 17.7rem;
+  width: 99%;
 
   @media screen and (max-width: 722px) {
-    height: 500px;
+    height: 35.714rem;
     align-content: center;
   }
 }

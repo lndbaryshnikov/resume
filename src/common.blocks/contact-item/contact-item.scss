@@ -6,21 +6,22 @@
   @media screen and (max-width: 400px) {
     display: block;
     text-align: center;
-    padding: 10px 0;
+    padding: 0.714rem 0;
   }
 
   @media screen and (max-width: 1094px) and (min-width: 723px) {
     display: block;
     text-align: center;
-    padding: 10px 0;
+    padding: 0.714rem 0;
   }
 
   &__data {
     display: table-cell;
     color: $black;
     font-size: 1.34rem;
-    padding-top: 9px;
-    padding-left: 5px;
+    padding-top: 0.531rem;
+    padding-left: 0.8rem;
+    letter-spacing: -0.01rem;
 
     @media screen and (max-width: 400px) {
       display: block;
@@ -39,24 +40,25 @@
     font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 24px 1.79em 32px*0.55 0px;
+    padding: 1.45rem 1.7rem 1.038rem 0;
+    letter-spacing: 0.008rem;
 
     @media screen and (max-width: 400px) {
       display: block;
       padding: 0;
-      margin-bottom: 10px;
+      margin-bottom: 0.714rem;
     }
 
     @media screen and (max-width: 1094px) and (min-width: 723px) {
       display: block;
       padding: 0;
-      margin-bottom: 10px;
+      margin-bottom: 0.714rem;
     }
   }
 
   &:nth-child(4) {
     .contact-item__type {
-      padding-top: 22px;
+      padding-top: 1.4rem;
 
       @media screen and (max-width: 400px) {
         padding-top: 0;

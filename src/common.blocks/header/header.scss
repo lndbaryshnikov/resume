@@ -7,21 +7,21 @@
   align-items: center;
 
   &__disk {
-    width: 14.891em;
-    height: 14.891em;
-    border: 2px solid $blue;
+    width: 14.55rem;
+    height: 14.55rem;
+    border: 0.12rem solid $blue;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 64px*0.55;
-    margin-left: 15px;
-    margin-top: 12px;
+    margin-bottom: 2.15rem;
+    margin-left: 0.88rem;
+    margin-top: 0.71rem;
   }
 
   &__disk-inner {
-    width: 13.236em;
-    height: 13.236em;
+    width: 13.2rem;
+    height: 13.2rem;
     background-color: $blue;
     border-radius: 50%;
   }
@@ -34,18 +34,18 @@
 
   &__name-here {
     color: $black;
-    font-size: 3.46rem;
+    font-size: 3.4rem;
     font-weight: 300;
     text-transform: uppercase;
-    margin-left: 17.7px;
+    margin-left: 0.8rem;
   }
 
   &__surname {
     color: $black;
     font-weight: bold;
-    font-size: 4.015rem;
+    font-size: 3.95rem;
     text-transform: uppercase;
-    margin-left: 15px;
+    margin-left: 0.8rem;
     line-height: 0.98;
   }
 
@@ -54,7 +54,8 @@
     font-weight: bold;
     font-size: 1.565rem;
     text-transform: uppercase;
-    margin-top: 15.11px*0.55;
-    margin-left: 18px;
+    margin-top: 0.45rem;
+    margin-left: 0.9rem;
+    letter-spacing: -0.015rem;
   }
 }

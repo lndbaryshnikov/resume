@@ -1,7 +1,11 @@
-mixin software-item({ tool, possession })
+mixin software-item({ tool, possession }, childNumber)
   .software-item
     .software-item__tool= tool
-    .software-item__scale
-      .software-item__level(style={width: `${+possession}%`})
 
+    if childNumber
+      div(class=`software-item__scale software-item__scale_child-number_${childNumber}`)
+        .software-item__level(style={width: `${+possession}%`})
 
+    else
+      .software-item__scale
+        .software-item__level(style={width: `${+possession}%`})
