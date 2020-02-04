@@ -1,7 +1,8 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const HtmlPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const FaviconsPlugin = require('favicons-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, 'src/basic'),
@@ -18,11 +19,21 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    new HtmlWebpackPlugin({
+    new HtmlPlugin({
       template: PATHS.src + '/index.pug',
     }),
-    new ExtractTextPlugin('./style.css'),
-    new FaviconsWebpackPlugin('./src/img/favicon.png')
+    new MiniCssExtractPlugin({
+      filename: 'style.css',
+    }),
+    new OptimizeCSSAssetsPlugin({
+      cssProcessorOptions: {
+        map: {
+          inline: false,
+          annotation: true
+        }
+      }
+    }),
+    new FaviconsPlugin('./src/img/favicon.png')
   ],
   module: {
     rules: [
@@ -35,39 +46,39 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {sourceMap: true},
-            },
-            {
-              loader: 'postcss-loader',
-              options: {sourceMap: true, config: {path: './postcss.config.js'}},
-            },
-            {
-              loader: 'sass-loader',
-              options: {sourceMap: true},
-            },
-          ],
-        }),
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {sourceMap: true},
+          },
+          {
+            loader: 'postcss-loader',
+            options: {sourceMap: true, config: {path: './postcss.config.js'}},
+          },
+          {
+            loader: 'sass-loader',
+            options: {sourceMap: true},
+          },
+        ],
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {sourceMap: true},
-            },
-            {
-              loader: 'postcss-loader',
-              options: {sourceMap: true, config: {path: './postcss.config.js'}},
-            },
-          ],
-        }),
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {sourceMap: true},
+          },
+          {
+            loader: 'postcss-loader',
+            options: {sourceMap: true, config: {path: './postcss.config.js'}},
+          },
+        ],
       },
       {
         test: /\.(jpg|png|svg)$/,
