@@ -9,7 +9,7 @@ include ../software/software
 
 mixin page
   .page
-    - const pageSectionWide = ["page__section", "page__section_width_wide"];
+    - const pageSectionWide = "page__section page__section_width_wide";
 
     section.page__section.page__section_type_for-header
       +header
@@ -31,25 +31,25 @@ mixin page
 
       -
         const contactsItems = [
-        {
-        type: "address",
-        data: "Main Street, City."
-        },
-        {
-        type: "e-mail",
-        data: "contact@domain.com",
-        attr: "mailto"
-        },
-        {
-        type: "phone",
-        data: "555-555-555",
-        attr: "tel"
-        },
-        {
-        type: "website",
-        data: "www.yourweb.com",
-        attr: "site"
-        }
+          {
+            type: "address",
+            data: "Main Street, City."
+          },
+          {
+            type: "e-mail",
+            data: "contact@domain.com",
+            attr: "mailto"
+          },
+          {
+            type: "phone",
+            data: "555-555-555",
+            attr: "tel"
+          },
+          {
+            type: "website",
+            data: "www.yourweb.com",
+            attr: "site"
+          }
         ];
 
       +contact(contactsItems)
@@ -61,28 +61,28 @@ mixin page
       })
       -
         const skillsItems = [
-        {
-        name: "creative",
-        level: "9"
-        },
-        {
-        name: "teamwork",
-        level: "11"
-        },
-        {
-        name: "innovate",
-        level: "6"
-        },
-        {
-        name: "communication",
-        level: "11"
-        }
+          {
+            name: "creative",
+            level: "9"
+          },
+          {
+            name: "teamwork",
+            level: "11"
+          },
+          {
+            name: "innovate",
+            level: "6"
+          },
+          {
+            name: "communication",
+            level: "11"
+          }
         ];
 
       .page__section-content.page__section-content_type_for-skills
         +skills(skillsItems)
 
-    section(class=pageSectionWide, class=["page__section_type_for-education"])
+    section(class=[pageSectionWide, "page__section_type_for-education"])
       +block-header({
         iconName: "education-icon.png",
         blockName: "education"
@@ -93,11 +93,11 @@ mixin page
         "dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
 
         var educationItem = {
-        name: "master degree",
-        period: "Feb 2011 - Jun 2014",
-        title: "university name",
-        description: educationDescription,
-        nameColor: "blue"
+          name: "master degree",
+          period: "Feb 2011 - Jun 2014",
+          title: "university name",
+          description: educationDescription,
+          nameColor: "blue"
         }
 
       .page__section-content.page__section-content_type_for-education
@@ -108,18 +108,18 @@ mixin page
           educationItem
         ])
 
-    section(class=pageSectionWide class=["page__section_type_for-experience"])
+    section(class=[pageSectionWide, "page__section_type_for-experience"])
       +block-header({
         iconName: "experience-icon.png",
         blockName: "experience"
       })
       -
         var experienceItem = {
-        name: "company name",
-        period: "Feb 2011 - Jun 2014",
-        title: "your job here",
-        description: educationDescription,
-        nameColor: "black"
+          name: "company name",
+          period: "Feb 2011 - Jun 2014",
+          title: "your job here",
+          description: educationDescription,
+          nameColor: "black"
         }
 
       .page__section-content.page__section-content_type_for-experience
@@ -129,39 +129,38 @@ mixin page
           experienceItem
         ])
 
-    section(class=pageSectionWide class=["page__section_type_for-software"])
+    section(class=[pageSectionWide, "page__section_type_for-software"])
       +block-header({
         iconName: "software-icon.png",
         blockName: "software"
       })
       -
         var softwareItems = [
-        {
-        tool: "photoshop",
-        possession: 505/554*100
-        },
-        {
-        tool: "illustrator",
-        possession: 391/554*100
-        },
-        {
-        tool: "indesign",
-        possession: 312/554*100
-        },
-        {
-        tool: "dreamweaver",
-        possession: 461/554*100
-        },
-        {
-        tool: "after effects",
-        possession: 342/554*100
-        },
-        {
-        tool: "html&css3",
-        possession: 505/554*100
-        }
+          {
+            tool: "photoshop",
+            possession: 505/554*100
+          },
+          {
+            tool: "illustrator",
+            possession: 391/554*100
+          },
+          {
+            tool: "indesign",
+            possession: 312/554*100
+          },
+          {
+            tool: "dreamweaver",
+            possession: 461/554*100
+          },
+          {
+            tool: "after effects",
+            possession: 342/554*100
+          },
+          {
+            tool: "html&css3",
+            possession: 505/554*100
+          }
         ];
 
       .page__section-content.page__section-content_type_for-software
         +software(softwareItems)
-
