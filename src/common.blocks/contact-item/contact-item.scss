@@ -3,13 +3,7 @@
 .contact-item {
   display: table-row;
 
-  @media screen and (max-width: 400px) {
-    display: block;
-    text-align: center;
-    padding: 0.714rem 0;
-  }
-
-  @media screen and (max-width: 1094px) and (min-width: 723px) {
+  @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
     display: block;
     text-align: center;
     padding: 0.714rem 0;
@@ -23,12 +17,7 @@
     padding-left: 0.8rem;
     letter-spacing: -0.01rem;
 
-    @media screen and (max-width: 400px) {
-      display: block;
-      padding: 0;
-    }
-
-    @media screen and (max-width: 1094px) and (min-width: 723px) {
+    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
       display: block;
       padding: 0;
     }
@@ -43,13 +32,7 @@
     padding: 1.45rem 1.7rem 1.038rem 0;
     letter-spacing: 0.008rem;
 
-    @media screen and (max-width: 400px) {
-      display: block;
-      padding: 0;
-      margin-bottom: 0.714rem;
-    }
-
-    @media screen and (max-width: 1094px) and (min-width: 723px) {
+    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
       display: block;
       padding: 0;
       margin-bottom: 0.714rem;
@@ -60,11 +43,7 @@
     .contact-item__type {
       padding-top: 1.4rem;
 
-      @media screen and (max-width: 400px) {
-        padding-top: 0;
-      }
-
-      @media screen and (max-width: 1094px) and (min-width: 723px) {
+      @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
         padding-top: 0;
       }
     }
@@ -79,4 +58,3 @@
     }
   }
 }
-
