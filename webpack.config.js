@@ -15,7 +15,6 @@ module.exports = {
   ],
   output: {
     path: PATHS.dist,
-    publicPath: './',
     filename: '[name].js'
   },
   plugins: [
@@ -33,7 +32,10 @@ module.exports = {
         }
       }
     }),
-    new FaviconsPlugin('./src/img/favicon.png')
+    new FaviconsPlugin({
+      logo: './src/img/favicon.png',
+      publicPath: '',
+    })
   ],
   module: {
     rules: [
