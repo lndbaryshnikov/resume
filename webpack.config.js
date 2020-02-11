@@ -33,7 +33,7 @@ module.exports = {
       }
     }),
     new FaviconsPlugin({
-      logo: './src/img/favicons/favicon.png',
+      logo: './src/favicons/favicon.png',
       prefix: 'favicons/',
       publicPath: '',
     })
@@ -86,6 +86,10 @@ module.exports = {
       {
         test: /\.(jpg|png|svg)$/,
         include: path.resolve(__dirname, 'src'),
+        exclude: [
+          path.resolve(__dirname, 'src/fonts'),
+          path.resolve(__dirname, 'src/favicons'),
+        ],
         loader: 'file-loader',
         options: {
           name: 'images/[name].[ext]'
@@ -98,7 +102,15 @@ module.exports = {
         options: {
           name: 'fonts/[name].[ext]'
         },
-      }
+      },
+      {
+        test: /\.(png|svg)$/,
+        include: path.resolve(__dirname, 'src/favicons'),
+        loader: 'file-loader',
+        options: {
+          name: 'favicons/[name].[ext]',
+        },
+      },
     ]
   },
   devServer: {
