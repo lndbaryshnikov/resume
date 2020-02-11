@@ -33,7 +33,8 @@ module.exports = {
       }
     }),
     new FaviconsPlugin({
-      logo: './src/img/favicon.png',
+      logo: './src/img/favicons/favicon.png',
+      prefix: 'favicons/',
       publicPath: '',
     })
   ],
