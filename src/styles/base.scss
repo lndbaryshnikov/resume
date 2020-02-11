@@ -1,4 +1,9 @@
-@import './colors';
+@import 'variables/colors';
+@import 'mixins/font-face';
+
+@each $type in 'regular', 'bold', 'light-semi-ext' {
+  @include font-face('Myriad Pro', 'myriad-pro', $type);
+}
 
 html {
   max-width: 1920px;

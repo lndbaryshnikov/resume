@@ -1,0 +1,20 @@
+@mixin font-face($font-family, $font, $type) {
+  $weight: 400;
+  $style: normal;
+
+  @if $type == 'bold' {
+    $weight: bold;
+  }
+  @else if $type == 'light-semi-ext' {
+    $weight: 300;
+  }
+
+  @font-face {
+    font-family: $font-family;
+    src: url('../fonts/#{$font}-#{$type}/#{$font}-#{$type}.woff') format('woff'),
+         url('../fonts/#{$font}-#{$type}/#{$font}-#{$type}.ttf') format('ttf'),
+         url('../fonts/#{$font}-#{$type}/#{$font}-#{$type}.svg') format('svg');
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
