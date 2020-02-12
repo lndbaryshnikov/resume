@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const FaviconsPlugin = require('favicons-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, 'src/basic'),
@@ -32,11 +31,6 @@ module.exports = {
         }
       }
     }),
-    new FaviconsPlugin({
-      logo: './src/favicons/favicon.png',
-      prefix: 'favicons/',
-      publicPath: '',
-    })
   ],
   module: {
     rules: [
@@ -60,6 +54,10 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {sourceMap: true, config: {path: './postcss.config.js'}},
+          },
+          {
+            loader: 'resolve-url-loader',
+            options: { sourceMap: true },
           },
           {
             loader: 'sass-loader',
@@ -87,14 +85,14 @@ module.exports = {
         test: /\.(png|svg|jpe?g)$/,
         include: path.resolve(__dirname, 'src'),
         exclude: [
-          path.resolve(__dirname, 'src/fonts'),
-          path.resolve(__dirname, 'src/favicons'),
+          path.resolve(__dirname, 'src/assets/fonts'),
+          path.resolve(__dirname, 'src/assets/favicons'),
         ],
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name].[ext]'
+              name: 'assets/images/[name].[ext]'
             },
           },
           {
@@ -117,18 +115,18 @@ module.exports = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        include: path.resolve(__dirname, 'src/fonts'),
+        include: path.resolve(__dirname, 'src/assets/fonts'),
         loader: 'file-loader',
         options: {
-          name: 'fonts/[name].[ext]'
+          name: 'assets/fonts/[name].[ext]'
         },
       },
       {
-        test: /\.(png|svg)$/,
-        include: path.resolve(__dirname, 'src/favicons'),
+        test: /\.(svg|png|ico|xml|json|webmanifest)$/,
+        include: path.resolve(__dirname, 'src/assets/favicons'),
         loader: 'file-loader',
         options: {
-          name: 'favicons/[name].[ext]',
+          name: 'assets/favicons/[name].[ext]',
         },
       },
     ]

@@ -9,11 +9,13 @@
     $weight: 300;
   }
 
+  $fontName: '#{$font}-#{$type}';
+
   @font-face {
     font-family: $font-family;
-    src: url('../fonts/#{$font}-#{$type}/#{$font}-#{$type}.woff') format('woff'),
-         url('../fonts/#{$font}-#{$type}/#{$font}-#{$type}.ttf') format('ttf'),
-         url('../fonts/#{$font}-#{$type}/#{$font}-#{$type}.svg') format('svg');
+    src: url('../../assets/fonts/#{$fontName}/#{$fontName}.woff') format('woff'),
+         url('../../assets/fonts/#{$fontName}/#{$fontName}.ttf') format('ttf'),
+         url('../../assets/fonts/#{$fontName}/#{$fontName}.svg') format('svg');
     font-weight: $weight;
     font-style: normal;
   }

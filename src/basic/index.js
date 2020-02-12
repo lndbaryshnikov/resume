@@ -1,4 +1,4 @@
-import '../favicons/safari-pinned-tab.svg';
+import '../assets/favicons/favicons';
 
 function requireAll(r) {
   return r.keys().map(r);
