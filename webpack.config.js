@@ -5,20 +5,20 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, 'src/page'),
-  dist: path.join(__dirname, 'dist')
+  dist: path.join(__dirname, 'dist'),
 };
 
 module.exports = {
   entry: [
-    PATHS.src + '/index.js',
+    `${PATHS.src}/index.js`,
   ],
   output: {
     path: PATHS.dist,
-    filename: '[name].js'
+    filename: '[name].js',
   },
   plugins: [
     new HtmlPlugin({
-      template: PATHS.src + '/index.pug',
+      template: `${PATHS.src}/index.pug`,
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
@@ -27,9 +27,9 @@ module.exports = {
       cssProcessorOptions: {
         map: {
           inline: false,
-          annotation: true
-        }
-      }
+          annotation: true,
+        },
+      },
     }),
   ],
   module: {
@@ -38,8 +38,8 @@ module.exports = {
         test: /\.pug$/,
         loader: 'pug-loader',
         options: {
-          pretty: true
-        }
+          pretty: true,
+        },
       },
       {
         test: /\.scss$/,
@@ -49,11 +49,11 @@ module.exports = {
           },
           {
             loader: 'css-loader',
-            options: {sourceMap: true},
+            options: { sourceMap: true },
           },
           {
             loader: 'postcss-loader',
-            options: {sourceMap: true, config: {path: './postcss.config.js'}},
+            options: { sourceMap: true, config: { path: './postcss.config.js' } },
           },
           {
             loader: 'resolve-url-loader',
@@ -61,7 +61,7 @@ module.exports = {
           },
           {
             loader: 'sass-loader',
-            options: {sourceMap: true},
+            options: { sourceMap: true },
           },
         ],
       },
@@ -73,11 +73,11 @@ module.exports = {
           },
           {
             loader: 'css-loader',
-            options: {sourceMap: true},
+            options: { sourceMap: true },
           },
           {
             loader: 'postcss-loader',
-            options: {sourceMap: true, config: {path: './postcss.config.js'}},
+            options: { sourceMap: true, config: { path: './postcss.config.js' } },
           },
         ],
       },
@@ -92,7 +92,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'assets/images/[name].[ext]'
+              name: 'assets/images/[name].[ext]',
             },
           },
           {
@@ -100,16 +100,16 @@ module.exports = {
             options: {
               mozjpeg: {
                 progressive: true,
-                quality: 65
+                quality: 65,
               },
               optipng: {
                 enabled: false,
               },
               pngquant: {
                 quality: [0.65, 0.90],
-                speed: 4
+                speed: 4,
               },
-            }
+            },
           },
         ],
       },
@@ -118,7 +118,7 @@ module.exports = {
         include: path.resolve(__dirname, 'src/assets/fonts'),
         loader: 'file-loader',
         options: {
-          name: 'assets/fonts/[name].[ext]'
+          name: 'assets/fonts/[name].[ext]',
         },
       },
       {
@@ -129,11 +129,12 @@ module.exports = {
           name: 'assets/favicons/[name].[ext]',
         },
       },
-    ]
+    ],
   },
   devServer: {
     stats: 'errors-only',
     contentBase: PATHS.dist,
-    compress: true
-  }
+    compress: true,
+  },
+  devtool: 'source-map',
 };
