@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const PATHS = {
-  src: path.join(__dirname, 'src/basic'),
+  src: path.join(__dirname, 'src/page'),
   dist: path.join(__dirname, 'dist')
 };
 
