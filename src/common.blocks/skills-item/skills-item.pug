@@ -6,9 +6,9 @@ mixin skills-item({ name, level, maxLevel = 12 })
     .skills-item__level
       while level > 0
         .skills-item__point.skills-item__point_checked
-        - level -= 1
+        - level -= 1;
 
       while notChecked > 0
         div.skills-item__point
-        - notChecked -= 1
+        - notChecked -= 1;
 
