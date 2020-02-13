@@ -5,8 +5,6 @@ mixin contact-item({ type, data, attr })
       if !attr
         span.contact-item__data-text= data
       else if attr === "site"
-        a.contact-item__data-link(href=`http://${data}` target="_blank" rel="noopener noreferrer")= data
+        a.contact-item__data-link(href=`http://${data}`, target="_blank", rel="noopener noreferrer")= data
       else
-        a.contact-item__data-link(href=`${attr}: ${data}` target="_blank" rel="noopener noreferrer")= data
-
-
+        a.contact-item__data-link(href=`${attr}: ${data}`, target="_blank", rel="noopener noreferrer")= data

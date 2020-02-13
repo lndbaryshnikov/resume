@@ -1,7 +1,8 @@
 mixin block-header({ iconName, blockName })
   header.block-header
-    img(class=`block-header__icon block-header__icon_type_for-${blockName}`
-      src=require(`../common.blocks/block-header/icons/${iconName}`)
+    img(
+      class=`block-header__icon block-header__icon_type_for-${blockName}`,
+      src=require(`../common.blocks/block-header/icons/${iconName}`),
       alt=blockName
     )
     div(class=`block-header__name block-header__name_type_for-${blockName}`)= blockName
