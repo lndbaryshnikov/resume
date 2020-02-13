@@ -1,7 +1,7 @@
 mixin contact-item({ type, data, attr })
-  tr.contact-item
-    td.contact-item__type= type
-    td.contact-item__data
+  .contact-item
+    .contact-item__type= type
+    .contact-item__data
       if !attr
         span.contact-item__data-text= data
       else if attr === "site"
