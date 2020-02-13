@@ -1,26 +1,26 @@
 @import '../../styles/variables/colors';
 
 .progress-list-item {
-  position: relative;
   color: $black;
+  position: relative;
 
-  &:before {
-    content: '';
+  &::before {
     background-color: $black;
-    width: 1.324rem;
-    height: 1.324rem;
-    display: inline-block;
     border-radius: 50%;
-    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 1.324rem;
     left: -2.596rem;
+    position: absolute;
     top: 0.295rem;
+    width: 1.324rem;
   }
 
   &__name {
-    font-weight: bold;
     font-size: 1.66rem;
-    text-transform: uppercase;
+    font-weight: bold;
     margin-right: 0.86rem;
+    text-transform: uppercase;
 
     &_color {
       &_blue {
@@ -34,24 +34,24 @@
   }
 
   &__period {
-    font-size: 1.7rem;
     display: inline-block;
+    font-size: 1.7rem;
     letter-spacing: -0.015rem;
   }
 
   &__title {
     font-size: 1.66rem;
-    text-transform: uppercase;
     line-height: 1.4;
+    text-transform: uppercase;
   }
 
   &__description {
-    font-size: 1rem;
     display: inline-block;
-    margin-top: 0.168rem;
-    margin-left: 0.118rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
+    font-size: 1rem;
     letter-spacing: -0.004rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-left: 0.118rem;
+    margin-top: 0.168rem;
   }
 }

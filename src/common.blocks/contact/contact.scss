@@ -3,13 +3,13 @@
 .contact {
   &__table {
     display: table;
-    margin-top: 0.708rem;
     line-height: 1rem;
+    margin-top: 0.708rem;
 
     @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
     }
   }
 }

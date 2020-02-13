@@ -5,17 +5,17 @@
 
   @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
     display: block;
-    text-align: center;
     padding: 0.714rem 0;
+    text-align: center;
   }
 
   &__data {
-    display: table-cell;
     color: $black;
+    display: table-cell;
     font-size: 1.34rem;
-    padding-top: 0.531rem;
-    padding-left: 0.8rem;
     letter-spacing: -0.01rem;
+    padding-left: 0.8rem;
+    padding-top: 0.531rem;
 
     @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
       display: block;
@@ -24,18 +24,18 @@
   }
 
   &__type {
-    display: table-cell;
     color: $blue;
+    display: table-cell;
     font-size: 1.3rem;
     font-weight: bold;
-    text-transform: uppercase;
-    padding: 1.45rem 1.7rem 1.038rem 0;
     letter-spacing: 0.008rem;
+    padding: 1.45rem 1.7rem 1.038rem 0;
+    text-transform: uppercase;
 
     @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
       display: block;
-      padding: 0;
       margin-bottom: 0.714rem;
+      padding: 0;
     }
   }
 

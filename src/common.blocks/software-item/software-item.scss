@@ -8,16 +8,16 @@
   }
 
   &__scale {
-    width: 21.75vw;
-    height: 1.772vw;
     background-color: $light-gray;
-    margin-top: 0.708rem;
-    margin-left: 0.059rem;
+    height: 1.772vw;
     margin-bottom: 1.475rem;
+    margin-left: 0.059rem;
+    margin-top: 0.708rem;
+    width: 21.75vw;
 
     @media screen and (max-width: 722px) {
-      width: 50vw;
       height: 2.5vw;
+      width: 50vw;
     }
   }
 

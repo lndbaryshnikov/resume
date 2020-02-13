@@ -6,13 +6,13 @@
 }
 
 html {
-  max-width: 1920px;
-  font-family: 'Myriad Pro', 'Arial', sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: calc(10px + 0.5vw);
-  color: $black;
   background-color: $resume-background;
+  color: $black;
+  font-family: 'Myriad Pro', 'Arial', sans-serif;
+  font-size: calc(10px + 0.5vw);
+  font-style: normal;
+  font-weight: normal;
+  max-width: 1920px;
 
   @media screen and (max-width: 1094px) {
     font-size: 14px;

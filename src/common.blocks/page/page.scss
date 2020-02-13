@@ -1,13 +1,13 @@
 .page {
+  align-content: space-between;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: flex-start;
+  max-height: 236rem*0.55;
   padding-left: 3.5rem;
   padding-right: 3.309rem;
   padding-top: 4.4rem;
-  max-height: 236rem*0.55;
 
   @media screen and (max-width: 400px) {
     padding-left: 8vw;
@@ -19,8 +19,8 @@
   }
 
   &__section {
-    width: 36.5%;
     margin-bottom: 2.9205rem;
+    width: 36.5%;
 
     @media screen and (max-width: 722px) {
       width: 100%;
@@ -28,21 +28,21 @@
 
     &_width {
       &_wide {
-        width: 56%;
         margin-right: 0.25rem;
+        width: 56%;
 
         @media screen and (max-width: 722px) {
-          width: 100%;
           margin-left: 0;
+          width: 100%;
         }
       }
     }
 
     &_type {
       &_for-header {
-        margin-top: 0.1rem;
         margin-bottom: 4.88rem;
         margin-left: 0.354rem;
+        margin-top: 0.1rem;
       }
 
       &_for-profile {
@@ -50,8 +50,8 @@
       }
 
       &_for-contact {
-        width: 36.9%;
         margin-bottom: 2.2715rem;
+        width: 36.9%;
       }
 
       &_for-skills {
@@ -83,8 +83,8 @@
   &__section-content {
     &_type {
       &_for-profile {
-        margin-top: 0.8rem;
         margin-left: 0;
+        margin-top: 0.8rem;
       }
 
       &_for-skills {
@@ -92,8 +92,8 @@
       }
 
       &_for-education {
-        width: 100%;
         margin-left: 0.885rem;
+        width: 100%;
       }
 
       &_for-experience {
@@ -103,9 +103,9 @@
       }
 
       &_for-software {
-        margin-top: 1.6rem;
         margin-left: 0.3245rem;
         margin-right: 0.0295rem;
+        margin-top: 1.6rem;
         width: 100%;
       }
     }

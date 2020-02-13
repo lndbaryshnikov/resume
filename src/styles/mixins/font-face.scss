@@ -9,14 +9,14 @@
     $weight: 300;
   }
 
-  $fontName: '#{$font}-#{$type}';
+  $font-name: '#{$font}-#{$type}';
 
   @font-face {
     font-family: $font-family;
-    src: url('../../assets/fonts/#{$fontName}/#{$fontName}.woff') format('woff'),
-         url('../../assets/fonts/#{$fontName}/#{$fontName}.ttf') format('ttf'),
-         url('../../assets/fonts/#{$fontName}/#{$fontName}.svg') format('svg');
-    font-weight: $weight;
     font-style: normal;
+    font-weight: $weight;
+    src: url('../../assets/fonts/#{$font-name}/#{$font-name}.woff') format('woff'),
+      url('../../assets/fonts/#{$font-name}/#{$font-name}.ttf') format('ttf'),
+      url('../../assets/fonts/#{$font-name}/#{$font-name}.svg') format('svg');
   }
 }

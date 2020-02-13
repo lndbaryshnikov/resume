@@ -1,14 +1,14 @@
 @import '../software-item/software-item';
 
 .software {
+  align-content: space-between;
   display: flex;
   flex-flow: column wrap;
-  align-content: space-between;
   height: 17.7rem;
   width: 99%;
 
   @media screen and (max-width: 722px) {
-    height: 35.714rem;
     align-content: center;
+    height: 35.714rem;
   }
 }

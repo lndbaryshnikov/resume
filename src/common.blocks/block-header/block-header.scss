@@ -1,19 +1,19 @@
 @import '../../styles/variables/colors';
 
 .block-header {
-  width: 100%;
-  display: flex;
   align-items: center;
+  display: flex;
+  width: 100%;
 
   &__name {
     color: $blue;
-    font-weight: bold;
-    margin-left: 2.4%;
-    margin-bottom: 0.15rem;
     font-size: 2.671rem;
-    white-space: nowrap;
-    text-transform: uppercase;
+    font-weight: bold;
     letter-spacing: -0.02rem;
+    margin-bottom: 0.15rem;
+    margin-left: 2.4%;
+    text-transform: uppercase;
+    white-space: nowrap;
 
     @media screen and (max-width: 400px) {
       font-size: 2.2rem;
@@ -25,13 +25,13 @@
       }
 
       &_for-education {
-        margin-left: 3.1%;
         margin-bottom: 0.1rem;
+        margin-left: 3.1%;
       }
 
       &_for-experience {
-        margin-left: 2.69%;
         margin-bottom: 0.05rem;
+        margin-left: 2.69%;
       }
 
       &_for-software {
@@ -41,15 +41,15 @@
   }
 
   &__line {
-    width: 100%;
-    margin-left: 1.7%;
-    height: 0.45vw;
     background-color: $blue;
+    height: 0.45vw;
+    margin-left: 1.7%;
+    width: 100%;
 
     &_type {
       &_for-experience {
-        margin-left: 0.7%;
         height: 0.4vw;
+        margin-left: 0.7%;
       }
 
       &_for-software {
@@ -59,8 +59,8 @@
   }
 
   &__icon {
-    width: 4.7rem;
     max-width: 4.8rem;
+    width: 4.7rem;
 
     @media screen and (max-width: 400px) {
       width: 3.5rem;
@@ -68,8 +68,8 @@
 
     &_type {
       &_for-contact {
-        width: 4.65rem;
         margin-right: 0.05rem;
+        width: 4.65rem;
       }
 
       &_for-skills {
