@@ -1,15 +1,8 @@
 # Dependency directories
 node_modules/
-.idea/
-
-# Fonts
-#src/fonts/
 
 # Dist
 dist/
 
-# Reports
-report.20190401.140738.8624.001.json
-report.20190401.141419.7716.001.json
-report.20190401.142318.3788.001.json
-report.20190401.142656.4328.001.json
+# VSCode config
+.vscode/

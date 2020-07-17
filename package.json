@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
     "server": "webpack-dev-server --mode development --open",
     "deploy": "gh-pages -d dist",
+    "lint": "npm run pug-lint && npm run stylelint",
     "pug-lint": "pug-lint --config .pug-lintrc src",
     "stylelint": "stylelint --config .stylelintrc \"src/**/*.scss\"",
     "stylelint-fix": "stylelint --config .stylelintrc \"src/**/*.scss\" --fix"
