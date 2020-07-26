@@ -14,15 +14,16 @@
     padding-right: 8vw;
   }
 
-  @media screen and (max-width: 722px) {
+  @media screen and (max-width: 726px) {
     flex-wrap: nowrap;
+    max-height: none;
   }
 
   &__section {
     margin-bottom: 2.7rem;
     width: 37%;
 
-    @media screen and (max-width: 722px) {
+    @media screen and (max-width: 726px) {
       width: 100%;
     }
 
@@ -30,7 +31,7 @@
       &_wide {
         width: 56.5%;
 
-        @media screen and (max-width: 722px) {
+        @media screen and (max-width: 726px) {
           margin-left: 0;
           width: 100%;
         }
@@ -54,13 +55,21 @@
       }
 
       &_for-header, &_for-profile, &_for-contact, &_for-skills {
-        @media screen and (max-width: 722px) {
+        @media screen and (max-width: 726px) {
           margin-left: 0;
         }
       }
 
       &_for-education, &_for-experience {
         margin-bottom: 1.6rem;
+      }
+
+      &_for-software {
+        margin-bottom: 0;
+
+        @media screen and (max-width: 726px) {
+          margin-bottom: 2rem;
+        }
       }
     }
   }
@@ -69,7 +78,7 @@
     &_type_for-contact {
       margin-left: 0.118rem;
 
-      @media screen and (max-width: 722px) {
+      @media screen and (max-width: 726px) {
         margin-left: 0;
       }
     }
@@ -87,15 +96,23 @@
       }
 
       &_for-education {
-        margin-left: 1.8rem;
         margin-top: 1.4rem;
-        width: 100%;
       }
 
       &_for-experience {
-        margin-left: 1.8rem;
         margin-top: 2.3rem;
-        width: 100%;
+      }
+
+      &_for-education, &_for-experience {
+        margin-left: 1.7rem;
+
+        @media screen and (max-width: 600px) {
+          margin-left: 0.6rem;
+        }
+
+        @media screen and (max-width: 400px) {
+          margin-top: 1.5rem;
+        }
       }
 
       &_for-software {

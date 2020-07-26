@@ -1,7 +1,10 @@
-mixin progress-list-item({ name, period, title, description, nameColor }, blockName)
+mixin progress-list-item({ name, periodFrom, periodTo, title, description, nameColor }, blockName)
   li.progress-list-item
     .progress-list-item__header
-      span(class=["progress-list-item__name", `progress-list-item__name_color_${nameColor}`])= name
-      span.progress-list-item__period // #{period}
+      span.progress-list-item__name(class=[`progress-list-item__name_color_${nameColor}`])= name
+      span.progress-list-item__period // 
+        span.progress-list-item__period-part #{periodFrom}
+        |  -  
+        span.progress-list-item__period-part #{periodTo}
     span.progress-list-item__title= title
     p.progress-list-item__description= description

@@ -19,7 +19,7 @@
   &__name {
     font-size: 1.66rem;
     font-weight: bold;
-    margin-right: 0.86rem;
+    margin-right: 0.95rem;
     text-transform: uppercase;
     letter-spacing: -0.04rem;
 
@@ -40,11 +40,15 @@
     letter-spacing: -0.04rem;
   }
 
+  &__period-part {
+    white-space: nowrap;
+  }
+
   &__title {
     font-size: 1.66rem;
     line-height: 1.3;
     text-transform: uppercase;
-    letter-spacing: -0.045rem;
+    letter-spacing: -0.03rem;
   }
 
   &__description {
@@ -52,8 +56,6 @@
     font-size: 1rem;
     letter-spacing: -0.018rem;
     line-height: 1.2;
-    margin-bottom: 0.5rem;
-    margin-left: 0.118rem;
-    margin-top: 0.168rem;
+    margin: 0.168rem 0 0.5rem 0.118rem;
   }
 }

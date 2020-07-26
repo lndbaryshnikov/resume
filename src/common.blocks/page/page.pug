@@ -94,7 +94,8 @@ mixin page
 
         var educationItem = {
           name: "master degree",
-          period: "Feb 2011 - Jun 2014",
+          periodFrom: "Feb 2011",
+          periodTo: "Jun 2014",
           title: "university name",
           description: educationDescription,
           nameColor: "blue"
@@ -116,7 +117,8 @@ mixin page
       -
         var experienceItem = {
           name: "company name",
-          period: "Feb 2011 - Jun 2014",
+          periodFrom: "Feb 2011",
+          periodTo: "Jun 2014",
           title: "your job here",
           description: educationDescription,
           nameColor: "black"
@@ -129,7 +131,7 @@ mixin page
           experienceItem
         ])
 
-    section(class=pageSectionWide)
+    section(class=[pageSectionWide, "page__section_type_for-software"])
       +block-header({
         iconName: "software-icon.png",
         blockName: "software"

@@ -3,7 +3,7 @@
 .contact-item {
   display: table-row;
 
-  @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
+  @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
     display: block;
     padding: 0.714rem 0;
     text-align: center;
@@ -16,7 +16,7 @@
     letter-spacing: -0.03rem;
     padding-left: 0.75rem;
 
-    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
+    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
       display: block;
       padding: 0;
     }
@@ -31,7 +31,7 @@
     padding: 1.55rem 1.7rem 0.9rem 0.1rem;
     text-transform: uppercase;
 
-    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
+    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
       display: block;
       margin-bottom: 0.714rem;
       padding: 0;
@@ -42,7 +42,7 @@
     .contact-item__type {
       padding-top: 1.4rem;
 
-      @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 723px) {
+      @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
         padding-top: 0;
       }
     }

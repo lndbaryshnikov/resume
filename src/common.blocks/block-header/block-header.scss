@@ -19,6 +19,10 @@
       font-size: 2.2rem;
     }
 
+    @media screen and (max-width: 1680px) {
+      margin-bottom: 0;
+    }
+
     &_type {
       &_for-skills {
         margin-right: 0.45rem;
@@ -31,10 +35,18 @@
       &_for-experience {
         margin-bottom: 0.05rem;
         margin-left: 2.69%;
+
+        @media screen and (max-width: 1680px) {
+          margin-bottom: 0;
+        }
       }
 
       &_for-software {
         margin: 0.2rem 0.85rem 0 3%;
+
+        @media screen and (max-width: 1680px) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -53,6 +65,13 @@
 
       &_for-software {
         height: 0.368vw;
+      }
+
+      &_for-experience, &_for-software {
+        @media screen and (max-width: 1680px) {
+          height: 0.45vw;
+          margin-left: 1.7%;
+        }
       }
     }
   }

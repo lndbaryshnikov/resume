@@ -31,7 +31,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: -0.06rem;
-    
+    overflow-wrap: anywhere;
   }
 
   &__name-here {
@@ -40,6 +40,10 @@
     font-weight: 300;
     margin-left: 0.5rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1094px) {
+      font-size: 2.4rem;
+    }
   }
 
   &__surname {
@@ -50,6 +54,10 @@
     margin-left: 0.5rem;
     text-transform: uppercase;
     letter-spacing: -0.1rem;
+
+    @media screen and (max-width: 1094px) {
+      font-size: 2.95rem;
+    }
   }
 
   &__job {
@@ -60,5 +68,9 @@
     margin-left: 0.6rem;
     margin-top: 0.45rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1094px) {
+      font-size: 1.3rem;
+    }
   }
 }

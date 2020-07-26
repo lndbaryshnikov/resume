@@ -29,6 +29,11 @@
     border-radius: 50%;
     height: 1.092rem;
     width: 1.092rem;
+
+    @media screen and (max-width: 400px), screen and (max-width: 900px) and (min-width: 727px) {
+      height: 0.8rem;
+      width: 0.8rem;
+    }
   }
 
   &__point_checked {

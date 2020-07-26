@@ -6,10 +6,10 @@
   flex-flow: column wrap;
   height: 18rem;
   width: 99%;
-  
 
-  @media screen and (max-width: 722px) {
-    align-content: center;
-    height: 35.714rem;
+  @media screen and (max-width: 726px) {
+    align-items: center;
+    flex-wrap: nowrap;
+    height: auto;
   }
 }
