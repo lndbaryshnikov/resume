@@ -11,32 +11,34 @@
     border: 0.12rem solid $blue;
     border-radius: 50%;
     display: flex;
-    height: 14.55rem;
+    height: 14.3rem;
     justify-content: center;
-    margin-bottom: 2.15rem;
-    margin-left: 0.88rem;
-    margin-top: 0.71rem;
-    width: 14.55rem;
+    margin-bottom: 1.8rem;
+    margin-left: 0.8rem;
+    margin-top: 0.65rem;
+    width: 14.3rem;
   }
 
   &__disk-inner {
     background-color: $blue;
     border-radius: 50%;
-    height: 13.2rem;
-    width: 13.2rem;
+    height: 12.6rem;
+    width: 12.6rem;
   }
 
   &__name {
     line-height: 0.9;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: -0.06rem;
+    
   }
 
   &__name-here {
     color: $black;
     font-size: 3.4rem;
     font-weight: 300;
-    margin-left: 0.8rem;
+    margin-left: 0.5rem;
     text-transform: uppercase;
   }
 
@@ -44,17 +46,18 @@
     color: $black;
     font-size: 3.95rem;
     font-weight: bold;
-    line-height: 0.98;
-    margin-left: 0.8rem;
+    line-height: 0.9;
+    margin-left: 0.5rem;
     text-transform: uppercase;
+    letter-spacing: -0.1rem;
   }
 
   &__job {
     color: $black;
     font-size: 1.565rem;
     font-weight: bold;
-    letter-spacing: -0.015rem;
-    margin-left: 0.9rem;
+    letter-spacing: -0.05rem;
+    margin-left: 0.6rem;
     margin-top: 0.45rem;
     text-transform: uppercase;
   }

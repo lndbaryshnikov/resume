@@ -5,15 +5,16 @@
     color: $black;
     font-size: 1.66rem;
     text-transform: uppercase;
+    letter-spacing: -0.03rem;
   }
 
   &__scale {
     background-color: $light-gray;
+    max-height: 1.36rem;
     height: 1.772vw;
-    margin-bottom: 1.475rem;
-    margin-left: 0.059rem;
-    margin-top: 0.708rem;
-    width: 21.75vw;
+    margin: 0.7rem 0 1.3rem 0.059rem;
+    max-width: 18rem;
+    width: 22.2vw;
 
     @media screen and (max-width: 722px) {
       height: 2.5vw;

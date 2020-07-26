@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   max-height: 140rem;
-  padding-left: 3.5rem;
-  padding-right: 3.309rem;
+  padding-left: 3.4rem;
+  padding-right: 3.2rem;
   padding-top: 4.4rem;
 
   @media screen and (max-width: 400px) {
@@ -19,8 +19,8 @@
   }
 
   &__section {
-    margin-bottom: 2.9205rem;
-    width: 36.5%;
+    margin-bottom: 2.7rem;
+    width: 37%;
 
     @media screen and (max-width: 722px) {
       width: 100%;
@@ -28,8 +28,7 @@
 
     &_width {
       &_wide {
-        margin-right: 0.25rem;
-        width: 56%;
+        width: 56.5%;
 
         @media screen and (max-width: 722px) {
           margin-left: 0;
@@ -40,13 +39,9 @@
 
     &_type {
       &_for-header {
-        margin-bottom: 4.88rem;
-        margin-left: 0.354rem;
+        margin-bottom: 4.65rem;
+        margin-left: 0.15rem;
         margin-top: 0.1rem;
-      }
-
-      &_for-profile {
-        margin-left: 0.236rem;
       }
 
       &_for-contact {
@@ -55,7 +50,7 @@
       }
 
       &_for-skills {
-        margin-left: 0.177rem;
+        width: 36.8%;
       }
 
       &_for-header, &_for-profile, &_for-contact, &_for-skills {
@@ -65,7 +60,7 @@
       }
 
       &_for-education, &_for-experience {
-        margin-bottom: 1.8585rem;
+        margin-bottom: 1.6rem;
       }
     }
   }
@@ -84,29 +79,28 @@
     &_type {
       &_for-profile {
         margin-left: 0;
-        margin-top: 0.8rem;
+        margin-top: 0.65rem;
       }
 
       &_for-skills {
-        margin-top: 1.45rem;
+        margin-top: 1.35rem;
       }
 
       &_for-education {
-        margin-left: 0.885rem;
+        margin-left: 1.8rem;
+        margin-top: 1.4rem;
         width: 100%;
       }
 
       &_for-experience {
-        margin-left: 0.885rem;
-        margin-top: 2.65rem;
+        margin-left: 1.8rem;
+        margin-top: 2.3rem;
         width: 100%;
       }
 
       &_for-software {
-        margin-left: 0.3245rem;
-        margin-right: 0.0295rem;
-        margin-top: 1.6rem;
-        width: 100%;
+        margin: 1.4rem 0.0295rem 0 0.5rem;
+        width: 99%;
       }
     }
   }

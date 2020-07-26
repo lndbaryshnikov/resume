@@ -12,7 +12,7 @@
     height: 1.324rem;
     left: -2.596rem;
     position: absolute;
-    top: 0.295rem;
+    top: 0.4rem;
     width: 1.324rem;
   }
 
@@ -21,6 +21,7 @@
     font-weight: bold;
     margin-right: 0.86rem;
     text-transform: uppercase;
+    letter-spacing: -0.04rem;
 
     &_color {
       &_blue {
@@ -36,19 +37,20 @@
   &__period {
     display: inline-block;
     font-size: 1.7rem;
-    letter-spacing: -0.015rem;
+    letter-spacing: -0.04rem;
   }
 
   &__title {
     font-size: 1.66rem;
-    line-height: 1.4;
+    line-height: 1.3;
     text-transform: uppercase;
+    letter-spacing: -0.045rem;
   }
 
   &__description {
     display: inline-block;
     font-size: 1rem;
-    letter-spacing: -0.004rem;
+    letter-spacing: -0.018rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
     margin-left: 0.118rem;

@@ -1,5 +1,5 @@
 mixin progress-list-item({ name, period, title, description, nameColor }, blockName)
-  li(class=`progress-list-item progress-list-item_type_for-${blockName}`)
+  li.progress-list-item
     .progress-list-item__header
       span(class=["progress-list-item__name", `progress-list-item__name_color_${nameColor}`])= name
       span.progress-list-item__period // #{period}
