@@ -1,8 +1,7 @@
 .page {
   align-content: space-between;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: flex-start;
   max-height: 140rem;
   padding-left: 3.4rem;
@@ -65,7 +64,7 @@
       }
 
       &_for-software {
-        margin-bottom: 0;
+        margin-bottom: 4.2rem;
 
         @media screen and (max-width: 726px) {
           margin-bottom: 2rem;
