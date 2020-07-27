@@ -1,15 +1,14 @@
 @import '../software-item/software-item';
 
 .software {
-  align-content: space-between;
+  justify-content: space-between;
   display: flex;
-  flex-flow: column wrap;
-  height: 18rem;
-  width: 99%;
+  flex-flow: row wrap;
+  width: 99.3%;
 
   @media screen and (max-width: 726px) {
     align-items: center;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     height: auto;
   }
 }
