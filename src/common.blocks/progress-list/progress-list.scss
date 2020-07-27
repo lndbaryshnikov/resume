@@ -7,5 +7,17 @@
     &:nth-child(1) {
       margin-bottom: 0.15rem;
     }
+
+    &_type {
+      &_for-experience {
+        &:nth-child(1) {
+          margin-bottom: 0;
+        }
+
+        &:nth-child(2) {
+          margin-bottom: 0.15rem;
+        }
+      }
+    }
   }
 }
