@@ -1,11 +1,23 @@
 @import '../../styles/variables/colors';
 
 .software-item {
+  max-width: 18rem;
+  width: 22.2vw;
+
+  @media screen and (max-width: 726px) {
+    width: 50vw;
+  }
+
   &__tool {
     color: $black;
     font-size: 1.66rem;
     text-transform: uppercase;
     letter-spacing: -0.03rem;
+    overflow-wrap: anywhere;
+
+    @media screen and (max-width: 400px) {
+      font-size: 1.3rem;
+    }
   }
 
   &__scale {
@@ -13,12 +25,14 @@
     max-height: 1.36rem;
     height: 1.772vw;
     margin: 0.71rem 0 1.3rem 0.059rem;
-    max-width: 18rem;
-    width: 22.2vw;
 
     @media screen and (max-width: 726px) {
       height: 2.5vw;
       width: 50vw;
+    }
+
+    @media screen and (max-width: 400px) {
+      margin-top: 0.3rem;
     }
   }
 

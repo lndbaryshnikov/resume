@@ -11,6 +11,11 @@
     margin-bottom: 0.4rem;
     margin-left: 0.27rem;
     text-transform: uppercase;
+    overflow-wrap: anywhere;
+
+    @media screen and (max-width: 400px) {
+      font-size: 1.3rem;
+    }
   }
 
   &__level {
