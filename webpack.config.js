@@ -14,14 +14,14 @@ module.exports = {
   ],
   output: {
     path: PATHS.dist,
-    filename: '[name].js',
+    filename: 'index.js',
   },
   plugins: [
     new HtmlPlugin({
       template: `${PATHS.src}/index.pug`,
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: 'index.css',
     }),
     new OptimizeCSSAssetsPlugin({
       cssProcessorOptions: {
