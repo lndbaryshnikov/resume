@@ -1,6 +1,5 @@
-include ../header/header
+include ../user-info/user-info
 include ../block-header/block-header
-include ../profile/profile
 include ../contact/contact
 include ../skills/skills
 include ../education/education
@@ -9,160 +8,170 @@ include ../software/software
 
 mixin page
   .page
-    - const pageSectionWide = "page__section page__section_width_wide";
+    .page__side
+      section.page__section.page__section_type_for-user-info
+        +user-info
 
-    section.page__section.page__section_type_for-header
-      +header
+      section.page__section
+        +block-header({
+          iconName: "profile-icon.png",
+          blockName: "profile"
+        })
+        .page__section-content.page__section-content_type_for-profile
+          span
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            | Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            | Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+            | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+            | Nullam dictum felis eu
+            strong pede mollis pretium. Integer tincidunt.
+              |  Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+              | Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+              | Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+              | Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
 
-    section.page__section
-      +block-header({
-        iconName: "profile-icon.png",
-        blockName: "profile"
-      })
-      .page__section-content.page__section-content_type_for-profile
-        +profile
-
-    section.page__section.page__section_type_for-contact
-      .page__section-header.page__section-header_type_for-contact
+      section.page__section.page__section_type_for-contact
         +block-header({
           iconName: "contact-icon.png",
           blockName: "contact"
         })
 
-      -
-        const contactsItems = [
-          {
-            type: "address",
-            data: "Main Street, City."
-          },
-          {
-            type: "e-mail",
-            data: "contact@domain.com",
-            attr: "mailto"
-          },
-          {
-            type: "phone",
-            data: "555-555-555",
-            attr: "tel"
-          },
-          {
-            type: "website",
-            data: "www.yourweb.com",
-            attr: "site"
-          }
-        ];
+        -
+          const contactsItems = [
+            {
+              type: "address",
+              data: "Main Street, City."
+            },
+            {
+              type: "e-mail",
+              data: "contact@domain.com",
+              attr: "mailto"
+            },
+            {
+              type: "phone",
+              data: "555-555-555",
+              attr: "tel"
+            },
+            {
+              type: "website",
+              data: "www.yourweb.com",
+              attr: "site"
+            }
+          ];
 
-      +contact(contactsItems)
+        +contact(contactsItems)
 
-    section.page__section.page__section_type_for-skills
-      +block-header({
-        iconName: "skills-icon.png",
-        blockName: "skills"
-      })
-      -
-        const skillsItems = [
-          {
-            name: "creative",
-            level: 9
-          },
-          {
-            name: "teamwork",
-            level: 11
-          },
-          {
-            name: "innovate",
-            level: 6
-          },
-          {
-            name: "communication",
-            level: 11
-          }
-        ];
+      section.page__section
+        +block-header({
+          iconName: "skills-icon.png",
+          blockName: "skills"
+        })
+        -
+          const skillsItems = [
+            {
+              name: "creative",
+              level: 9
+            },
+            {
+              name: "teamwork",
+              level: 11
+            },
+            {
+              name: "innovate",
+              level: 6
+            },
+            {
+              name: "communication",
+              level: 11
+            }
+          ];
 
-      .page__section-content.page__section-content_type_for-skills
-        +skills(skillsItems)
+        .page__section-content.page__section-content_type_for-skills
+          +skills(skillsItems)
 
-    section(class=[pageSectionWide, "page__section_type_for-education"])
-      +block-header({
-        iconName: "education-icon.png",
-        blockName: "education"
-      })
-      -
-        var educationDescription = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
-        "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis " +
-        "dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.";
+    .page__side.page__side_width_wide
+      section.page__section.page__section_type_for-education
+        +block-header({
+          iconName: "education-icon.png",
+          blockName: "education"
+        })
+        -
+          var educationDescription = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
+          "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis " +
+          "dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.";
 
-        var educationItem = {
-          name: "master degree",
-          periodFrom: "Feb 2011",
-          periodTo: "Jun 2014",
-          title: "university name",
-          description: educationDescription,
-          nameColor: "blue"
-        };
+          var educationItem = {
+            name: "master degree",
+            periodFrom: "Feb 2011",
+            periodTo: "Jun 2014",
+            title: "university name",
+            description: educationDescription,
+            nameColor: "blue"
+          };
 
-      .page__section-content.page__section-content_type_for-education
-        +education([
-          educationItem,
-          educationItem,
-          educationItem,
-          educationItem
-        ])
+        .page__section-content.page__section-content_type_for-education
+          +education([
+            educationItem,
+            educationItem,
+            educationItem,
+            educationItem
+          ])
 
-    section(class=[pageSectionWide, "page__section_type_for-experience"])
-      +block-header({
-        iconName: "experience-icon.png",
-        blockName: "experience"
-      })
-      -
-        var experienceItem = {
-          name: "company name",
-          periodFrom: "Feb 2011",
-          periodTo: "Jun 2014",
-          title: "your job here",
-          description: educationDescription,
-          nameColor: "black"
-        };
+      section.page__section.page__section_type_for-experience
+        +block-header({
+          iconName: "experience-icon.png",
+          blockName: "experience"
+        })
+        -
+          var experienceItem = {
+            name: "company name",
+            periodFrom: "Feb 2011",
+            periodTo: "Jun 2014",
+            title: "your job here",
+            description: educationDescription,
+            nameColor: "black"
+          };
 
-      .page__section-content.page__section-content_type_for-experience
-        +experience([
-          experienceItem,
-          experienceItem,
-          experienceItem
-        ])
+        .page__section-content.page__section-content_type_for-experience
+          +experience([
+            experienceItem,
+            experienceItem,
+            experienceItem
+          ])
 
-    section(class=[pageSectionWide, "page__section_type_for-software"])
-      +block-header({
-        iconName: "software-icon.png",
-        blockName: "software"
-      })
-      -
-        var softwareItems = [
-          {
-            tool: "photoshop",
-            possession: 505/554*100
-          },
-          {
-            tool: "dreamweaver",
-            possession: 461/554*100
-          },
-          {
-            tool: "illustrator",
-            possession: 391/554*100
-          },
-          {
-            tool: "after effects",
-            possession: 342/554*100
-          },
-          {
-            tool: "indesign",
-            possession: 312/554*100
-          },
-          {
-            tool: "html&css3",
-            possession: 505/554*100
-          },
-        ];
+      section.page__section.page__section_type_for-software
+        +block-header({
+          iconName: "software-icon.png",
+          blockName: "software"
+        })
+        -
+          var softwareItems = [
+            {
+              tool: "photoshop",
+              possession: 505/554*100
+            },
+            {
+              tool: "dreamweaver",
+              possession: 461/554*100
+            },
+            {
+              tool: "illustrator",
+              possession: 391/554*100
+            },
+            {
+              tool: "after effects",
+              possession: 342/554*100
+            },
+            {
+              tool: "indesign",
+              possession: 312/554*100
+            },
+            {
+              tool: "html&css3",
+              possession: 505/554*100
+            },
+          ];
 
-      .page__section-content.page__section-content_type_for-software
-        +software(softwareItems)
+        .page__section-content.page__section-content_type_for-software
+          +software(softwareItems)

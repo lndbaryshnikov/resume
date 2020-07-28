@@ -7,7 +7,7 @@
   &__name {
     color: $black;
     font-size: 1.68rem;
-    letter-spacing: -0.03rem;
+    letter-spacing: -0.05rem;
     margin-bottom: 0.4rem;
     margin-left: 0.27rem;
     text-transform: uppercase;
@@ -21,7 +21,7 @@
   &__level {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 1.2rem;
+    margin: 0 auto 1.3rem;
     width: 78%;
 
     @media screen and (max-width: 722px) {

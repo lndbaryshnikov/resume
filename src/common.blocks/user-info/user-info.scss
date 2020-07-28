@@ -1,45 +1,41 @@
 @import '../../styles/variables/colors';
 
-.header {
+.user-info {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
 
-  &__disk {
+  &__photo-frame {
+    width: 14.3rem;
+    height: 14.3rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
     border: 0.12rem solid $blue;
     border-radius: 50%;
-    display: flex;
-    height: 14.3rem;
-    justify-content: center;
-    margin-bottom: 1.8rem;
-    margin-left: 0.8rem;
-    margin-top: 0.65rem;
-    width: 14.3rem;
+    margin: 0.75rem 0 1.8rem 0.8rem;
   }
 
-  &__disk-inner {
+  &__photo {
     background-color: $blue;
     border-radius: 50%;
-    height: 12.6rem;
     width: 12.6rem;
+    height: 12.6rem;
   }
 
-  &__name {
+  &__description {
+    color: $black;
     line-height: 0.9;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: -0.06rem;
     overflow-wrap: anywhere;
+    margin-left: 0.7rem;
   }
 
-  &__name-here {
-    color: $black;
+  &__name {
     font-size: 3.4rem;
     font-weight: 300;
-    margin-left: 0.5rem;
-    text-transform: uppercase;
 
     @media screen and (max-width: 1094px) {
       font-size: 2.4rem;
@@ -47,12 +43,9 @@
   }
 
   &__surname {
-    color: $black;
     font-size: 3.95rem;
     font-weight: bold;
     line-height: 0.9;
-    margin-left: 0.5rem;
-    text-transform: uppercase;
     letter-spacing: -0.1rem;
 
     @media screen and (max-width: 1094px) {
@@ -61,13 +54,10 @@
   }
 
   &__job {
-    color: $black;
     font-size: 1.565rem;
     font-weight: bold;
     letter-spacing: -0.05rem;
-    margin-left: 0.6rem;
-    margin-top: 0.45rem;
-    text-transform: uppercase;
+    margin-top: 0.7rem;
 
     @media screen and (max-width: 1094px) {
       font-size: 1.3rem;

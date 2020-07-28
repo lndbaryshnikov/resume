@@ -1,62 +1,51 @@
 .page {
-  align-content: space-between;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  max-height: 140rem;
-  padding-left: 3.4rem;
-  padding-right: 3.2rem;
-  padding-top: 4.4rem;
+  justify-content: space-between;
+  padding: 4.4rem 3.2rem 0 3.4rem;
+
+  @media screen and (max-width: 726px) {
+    display: block;
+  }
 
   @media screen and (max-width: 400px) {
     padding-left: 8vw;
     padding-right: 8vw;
   }
 
-  @media screen and (max-width: 726px) {
-    flex-wrap: nowrap;
-    max-height: none;
+  &__side {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+
+    &_width_wide {
+      width: 56.5%;
+    }
+
+    &, &_width_wide {
+      @media screen and (max-width: 726px) {
+        width: 100%;
+      }
+    }
   }
 
   &__section {
-    margin-bottom: 2.7rem;
-    width: 37%;
+    margin-bottom: 2.6rem;
+    font-size: 0.985rem;
+    letter-spacing: -0.01rem;
+    line-height: 1.17769;
 
-    @media screen and (max-width: 726px) {
-      width: 100%;
-    }
-
-    &_width {
-      &_wide {
-        width: 56.5%;
+    &_type {
+      &_for-user-info {
+        margin-bottom: 4.9rem;
+        margin-left: 0.15rem;
 
         @media screen and (max-width: 726px) {
           margin-left: 0;
-          width: 100%;
         }
-      }
-    }
-
-    &_type {
-      &_for-header {
-        margin-bottom: 4.65rem;
-        margin-left: 0.15rem;
-        margin-top: 0.1rem;
       }
 
       &_for-contact {
         margin-bottom: 2.2715rem;
-        width: 36.9%;
-      }
-
-      &_for-skills {
-        width: 36.8%;
-      }
-
-      &_for-header, &_for-profile, &_for-contact, &_for-skills {
-        @media screen and (max-width: 726px) {
-          margin-left: 0;
-        }
       }
 
       &_for-education, &_for-experience {
@@ -73,29 +62,18 @@
     }
   }
 
-  &__section-header {
-    &_type_for-contact {
-      margin-left: 0.118rem;
-
-      @media screen and (max-width: 726px) {
-        margin-left: 0;
-      }
-    }
-  }
-
   &__section-content {
     &_type {
       &_for-profile {
-        margin-left: 0;
         margin-top: 0.65rem;
       }
 
       &_for-skills {
-        margin-top: 1.35rem;
+        margin-top: 1.3rem;
       }
 
       &_for-education {
-        margin-top: 1.4rem;
+        margin-top: 1.45rem;
       }
 
       &_for-experience {
@@ -116,7 +94,6 @@
 
       &_for-software {
         margin: 1.4rem 0.0295rem 0 0.5rem;
-        width: 99%;
       }
     }
   }

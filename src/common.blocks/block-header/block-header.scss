@@ -10,7 +10,6 @@
     font-size: 2.671rem;
     font-weight: bold;
     letter-spacing: -0.08rem;
-    margin-bottom: 0.15rem;
     margin-left: 1.9%;
     text-transform: uppercase;
     white-space: nowrap;
@@ -56,24 +55,6 @@
     height: 0.45vw;
     margin-left: 1.7%;
     width: 100%;
-
-    &_type {
-      &_for-experience {
-        height: 0.4vw;
-        margin-left: 0.7%;
-      }
-
-      &_for-software {
-        height: 0.368vw;
-      }
-
-      &_for-experience, &_for-software {
-        @media screen and (max-width: 1680px) {
-          height: 0.45vw;
-          margin-left: 1.7%;
-        }
-      }
-    }
   }
 
   &__icon {
@@ -82,21 +63,6 @@
 
     @media screen and (max-width: 400px) {
       width: 3.5rem;
-    }
-
-    &_type {
-      &_for-contact {
-        margin-right: 0.05rem;
-        width: 4.65rem;
-      }
-
-      &_for-skills {
-        width: 4.6rem;
-      }
-
-      &_for-experience {
-        width: 5.1rem;
-      }
     }
   }
 }

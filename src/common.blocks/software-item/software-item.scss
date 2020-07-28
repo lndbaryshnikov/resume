@@ -24,11 +24,10 @@
     background-color: $light-gray;
     max-height: 1.36rem;
     height: 1.772vw;
-    margin: 0.71rem 0 1.3rem 0.059rem;
+    margin: 0.75rem 0 1.35rem 0.059rem;
 
     @media screen and (max-width: 726px) {
       height: 2.5vw;
-      width: 50vw;
     }
 
     @media screen and (max-width: 400px) {
