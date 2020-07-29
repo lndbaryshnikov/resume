@@ -1,7 +1,10 @@
+include ../block-header/block-header
 include ../contact-item/contact-item
 
 mixin contact(items)
-  .contact
+  section.contact
+    +block-header("contact")
+
     .contact__table
       each item in items
         +contact-item(item)

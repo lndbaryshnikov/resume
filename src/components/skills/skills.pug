@@ -1,0 +1,10 @@
+include ../block-header/block-header
+include ../skills-item/skills-item
+
+mixin skills(items)
+  section.skills
+    +block-header("skills")
+
+    .skills__items
+      each item in items
+        +skills-item(item)

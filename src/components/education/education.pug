@@ -1,6 +1,9 @@
+include ../block-header/block-header
 include ../progress-list/progress-list
 
 mixin education(items)
-  .education
+  section.education
+    +block-header("education")
+
     .education__list
       +progress-list(items, "education")

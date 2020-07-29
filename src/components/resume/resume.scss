@@ -1,4 +1,4 @@
-.page {
+.resume {
   display: flex;
   justify-content: space-between;
   padding: 4.4rem 3.2rem 0 3.4rem;
@@ -66,37 +66,5 @@
     @media screen and (max-width: 726px) {
       margin-bottom: 2rem;
     }
-  }
-
-  &__profile-content {
-    margin-top: 0.65rem;
-  }
-
-  &__skills-content {
-    margin-top: 1.3rem;
-  }
-
-  &__education-content {
-    margin-top: 1.45rem;
-  }
-
-  &__experience-content {
-    margin-top: 2.45rem;
-  }
-
-  &__education-content, &__experience-content {
-    margin-left: 1.7rem;
-
-    @media screen and (max-width: 600px) {
-      margin-left: 0.6rem;
-    }
-
-    @media screen and (max-width: 400px) {
-      margin-top: 1.5rem;
-    }
-  }
-
-  &__software-content {
-    margin: 1.4rem 0.0295rem 0 0.5rem;
   }
 }

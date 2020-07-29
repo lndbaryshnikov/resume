@@ -1,0 +1,32 @@
+include ../user-info/user-info
+include ../profile/profile
+include ../contact/contact
+include ../skills/skills
+include ../education/education
+include ../experience/experience
+include ../software/software
+
+mixin resume({ userInfo, profile, contact, skills, education, experience, software } = {})
+  .resume
+    .resume__side
+      .resume__user-info
+        +user-info(userInfo)
+
+      .resume__profile
+        +profile(profile)
+          
+      .resume__contact
+        +contact(contact)
+
+      .resume__skills
+        +skills(skills)
+
+    .resume__side.resume__side_width_wide
+      .resume__education
+        +education(education)
+
+      .resume__experience
+        +experience(experience)
+
+      .resume__software
+        +software(software)

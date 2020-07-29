@@ -1,0 +1,9 @@
+include ../software-item/software-item
+
+mixin software(items)
+  .software
+    +block-header("software")
+  
+    .software__items
+      each item in items
+        +software-item(item)

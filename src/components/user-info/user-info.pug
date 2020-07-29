@@ -1,0 +1,12 @@
+mixin user-info({ name = "name here", surname = "surname", job = "graphic designer" } = {})
+  section.user-info
+    .user-info__photo-frame
+      img.user-info__photo(
+        src=require(`../../components/user-info/images/${name} ${surname}.png`),
+        alt=`${name} ${surname} photo`
+      )
+      
+    .user-info__description
+      .user-info__name= name
+      .user-info__surname= surname
+      .user-info__job= job

@@ -1,0 +1,87 @@
+{
+  "userInfo": { "name": "name here", "surname": "surname", "job": "graphic designer" },
+  "profile": {
+    "main": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu",
+    "conclusion": "pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. "
+  },
+  "contact": [
+    { "type": "address", "data": "Main Street, City." },
+    { "type": "e-mail", "data": "contact@domain.com", "attr": "mailto" },
+    { "type": "phone", "data": "555-555-555", "attr": "tel" },
+    { "type": "website", "data": "www.yourweb.com", "attr": "site" }
+  ],
+  "skills": [
+    { "name": "creative", "level": "9"},
+    { "name": "teamwork", "level": "11"},
+    { "name": "innovate", "level": "6"},
+    { "name": "communication", "level": "11"}
+  ],
+  "education": [
+    { 
+      "name": "master degree",
+      "periodFrom": "Feb 2011",
+      "periodTo": "Jun 2014",
+      "title": "university name",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
+      "nameColor": "blue"
+    },
+    { 
+      "name": "master degree",
+      "periodFrom": "Feb 2011",
+      "periodTo": "Jun 2014",
+      "title": "university name",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
+      "nameColor": "blue"
+    },
+    { 
+      "name": "master degree",
+      "periodFrom": "Feb 2011",
+      "periodTo": "Jun 2014",
+      "title": "university name",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
+      "nameColor": "blue"
+    },
+    { 
+      "name": "master degree",
+      "periodFrom": "Feb 2011",
+      "periodTo": "Jun 2014",
+      "title": "university name",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
+      "nameColor": "blue"
+    }
+  ],
+  "experience": [
+    {
+      "name": "company name",
+      "periodFrom": "Feb 2011",
+      "periodTo": "Jun 2014",
+      "title": "your job here",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
+      "nameColor": "black"
+    },
+    {
+      "name": "company name",
+      "periodFrom": "Feb 2011",
+      "periodTo": "Jun 2014",
+      "title": "your job here",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
+      "nameColor": "black"
+    },
+    {
+      "name": "company name",
+      "periodFrom": "Feb 2011",
+      "periodTo": "Jun 2014",
+      "title": "your job here",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
+      "nameColor": "black"
+    }
+  ],
+  "software": [
+    { "tool": "photoshop", "possession": 91 },
+    { "tool": "dreamweaver", "possession": 83 },
+    { "tool": "illustrator", "possession": 70.6 },
+    { "tool": "after effects", "possession": 61.7 },
+    { "tool": "indesign", "possession": 56.4 },
+    { "tool": "html&css3", "possession": 91.2 }
+  ]
+}

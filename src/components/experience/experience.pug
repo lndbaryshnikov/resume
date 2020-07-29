@@ -1,6 +1,9 @@
+include ../block-header/block-header
 include ../progress-list/progress-list
 
 mixin experience(items)
-  .experience
+  section.experience
+    +block-header("experience")
+
     .experience__list
       +progress-list(items, "experience")

@@ -1,0 +1,17 @@
+@import '../software-item/software-item';
+
+.software {
+  &__items {
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    width: 98.3%;
+    margin: 1.4rem 0.0295rem 0 0.5rem;
+
+    @media screen and (max-width: 726px) {
+      align-items: center;
+      flex-flow: column nowrap;
+      height: auto;
+    }
+  }
+}

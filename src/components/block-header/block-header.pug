@@ -1,7 +1,7 @@
-mixin block-header({ iconName, blockName })
+mixin block-header(blockName)
   header.block-header
     img.block-header__icon(
-      src=require(`../common.blocks/block-header/icons/${iconName}`),
+      src=require(`../../components/block-header/icons/${blockName}-icon.png`),
       alt=blockName
     )
     .block-header__name(class=`block-header__name_type_for-${blockName}`)= blockName
