@@ -2,9 +2,9 @@ mixin user-info({ name = "name here", surname = "surname", job = "graphic design
   .user-info
     .user-info__photo-frame
       img.user-info__photo(
-      src=require(`../common.blocks/user-info/images/${imageName}.png`),
-      alt=`${name} ${surname}`
-    )
+        src=require(`../common.blocks/user-info/images/${imageName}.png`),
+        alt=`${name} ${surname}`
+      )
     .user-info__description
       .user-info__name= name
       .user-info__surname= surname

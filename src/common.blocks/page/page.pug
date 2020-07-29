@@ -9,15 +9,15 @@ include ../software/software
 mixin page
   .page
     .page__side
-      section.page__section.page__section_type_for-user-info
+      section.page__user-info
         +user-info
 
-      section.page__section
+      section.page__profile
         +block-header({
           iconName: "profile-icon.png",
           blockName: "profile"
         })
-        .page__section-content.page__section-content_type_for-profile
+        .page__profile-content
           span
             | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             | Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -31,14 +31,14 @@ mixin page
               | Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
               | Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
 
-      section.page__section.page__section_type_for-contact
+      section.page__contact
         +block-header({
           iconName: "contact-icon.png",
           blockName: "contact"
         })
 
         -
-          const contactsItems = [
+          const contactItems = [
             {
               type: "address",
               data: "Main Street, City."
@@ -60,15 +60,15 @@ mixin page
             }
           ];
 
-        +contact(contactsItems)
+        +contact(contactItems)
 
-      section.page__section
+      section.page__skills
         +block-header({
           iconName: "skills-icon.png",
           blockName: "skills"
         })
         -
-          const skillsItems = [
+          const skillItems = [
             {
               name: "creative",
               level: 9
@@ -87,11 +87,11 @@ mixin page
             }
           ];
 
-        .page__section-content.page__section-content_type_for-skills
-          +skills(skillsItems)
+        .page__skills-content
+          +skills(skillItems)
 
     .page__side.page__side_width_wide
-      section.page__section.page__section_type_for-education
+      section.page__education
         +block-header({
           iconName: "education-icon.png",
           blockName: "education"
@@ -110,7 +110,7 @@ mixin page
             nameColor: "blue"
           };
 
-        .page__section-content.page__section-content_type_for-education
+        .page__education-content
           +education([
             educationItem,
             educationItem,
@@ -118,7 +118,7 @@ mixin page
             educationItem
           ])
 
-      section.page__section.page__section_type_for-experience
+      section.page__experience
         +block-header({
           iconName: "experience-icon.png",
           blockName: "experience"
@@ -133,14 +133,14 @@ mixin page
             nameColor: "black"
           };
 
-        .page__section-content.page__section-content_type_for-experience
+        .page__experience-content
           +experience([
             experienceItem,
             experienceItem,
             experienceItem
           ])
 
-      section.page__section.page__section_type_for-software
+      section.page__software
         +block-header({
           iconName: "software-icon.png",
           blockName: "software"
@@ -173,5 +173,5 @@ mixin page
             },
           ];
 
-        .page__section-content.page__section-content_type_for-software
+        .page__software-content
           +software(softwareItems)

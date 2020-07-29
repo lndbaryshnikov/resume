@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   padding: 4.4rem 3.2rem 0 3.4rem;
+  font-size: 0.985rem;
+  letter-spacing: -0.01rem;
+  line-height: 1.17769;
 
   @media screen and (max-width: 726px) {
     display: block;
@@ -28,73 +31,72 @@
     }
   }
 
-  &__section {
-    margin-bottom: 2.6rem;
-    font-size: 0.985rem;
-    letter-spacing: -0.01rem;
-    line-height: 1.17769;
+  &__user-info {
+    margin-bottom: 4.9rem;
+    margin-left: 0.15rem;
 
-    &_type {
-      &_for-user-info {
-        margin-bottom: 4.9rem;
-        margin-left: 0.15rem;
-
-        @media screen and (max-width: 726px) {
-          margin-left: 0;
-        }
-      }
-
-      &_for-contact {
-        margin-bottom: 2.2715rem;
-      }
-
-      &_for-education, &_for-experience {
-        margin-bottom: 1.6rem;
-      }
-
-      &_for-software {
-        margin-bottom: 4.2rem;
-
-        @media screen and (max-width: 726px) {
-          margin-bottom: 2rem;
-        }
-      }
+    @media screen and (max-width: 726px) {
+      margin-left: 0;
     }
   }
 
-  &__section-content {
-    &_type {
-      &_for-profile {
-        margin-top: 0.65rem;
-      }
+  &__profile {
+    margin-bottom: 2.6rem;
+  }
 
-      &_for-skills {
-        margin-top: 1.3rem;
-      }
+  &__contact {
+    margin-bottom: 2.2715rem;
+  }
 
-      &_for-education {
-        margin-top: 1.45rem;
-      }
+  &__skills {
+    margin-bottom: 2.6rem;
+  }
 
-      &_for-experience {
-        margin-top: 2.45rem;
-      }
+  &__education {
+    margin-bottom: 1.6rem;
+  }
 
-      &_for-education, &_for-experience {
-        margin-left: 1.7rem;
+  &__experience {
+    margin-bottom: 1.6rem;
+  }
 
-        @media screen and (max-width: 600px) {
-          margin-left: 0.6rem;
-        }
+  &__software {
+    margin-bottom: 4.2rem;
 
-        @media screen and (max-width: 400px) {
-          margin-top: 1.5rem;
-        }
-      }
-
-      &_for-software {
-        margin: 1.4rem 0.0295rem 0 0.5rem;
-      }
+    @media screen and (max-width: 726px) {
+      margin-bottom: 2rem;
     }
+  }
+
+  &__profile-content {
+    margin-top: 0.65rem;
+  }
+
+  &__skills-content {
+    margin-top: 1.3rem;
+  }
+
+  &__education-content {
+    margin-top: 1.45rem;
+  }
+
+  &__experience-content {
+    margin-top: 2.45rem;
+  }
+
+  &__education-content, &__experience-content {
+    margin-left: 1.7rem;
+
+    @media screen and (max-width: 600px) {
+      margin-left: 0.6rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__software-content {
+    margin: 1.4rem 0.0295rem 0 0.5rem;
   }
 }

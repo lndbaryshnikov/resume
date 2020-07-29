@@ -7,7 +7,7 @@
   "disallowIdAttributeWithStaticValue": true,
   "disallowLegacyMixinCall": true,
   "disallowMultipleLineBreaks": true,
-  "disallowSpacesInsideAttributeBrackets": true,
+  "disallowSpacesInsideAttributeBrackets": null,
   "disallowStringConcatenation": true,
   "disallowTrailingSpaces": true,
   "requireClassLiteralsBeforeAttributes": true,

@@ -4,5 +4,5 @@ mixin block-header({ iconName, blockName })
       src=require(`../common.blocks/block-header/icons/${iconName}`),
       alt=blockName
     )
-    div.block-header__name(class=`block-header__name_type_for-${blockName}`)= blockName
-    div.block-header__line
+    .block-header__name(class=`block-header__name_type_for-${blockName}`)= blockName
+    .block-header__line
