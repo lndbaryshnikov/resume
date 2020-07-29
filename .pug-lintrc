@@ -9,7 +9,7 @@
   "disallowMultipleLineBreaks": true,
   "disallowSpacesInsideAttributeBrackets": null,
   "disallowStringConcatenation": true,
-  "disallowTrailingSpaces": true,
+  "disallowTrailingSpaces": null,
   "requireClassLiteralsBeforeAttributes": true,
   "requireLineFeedAtFileEnd": true,
   "requireLowerCaseAttributes": true,
