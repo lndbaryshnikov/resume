@@ -12,8 +12,8 @@ mixin contact(items)
           .contact__item-type= type
           .contact__item-data
             if !attr
-              span.contact__item-data-text= data
+              span.contact__item-text= data
             else if attr === "site"
-              a.contact__item-data-link(href=`http://${data}`, target="_blank", rel="noopener noreferrer")= data
+              a.contact__item-link(href=`http://${data}`, target="_blank", rel="noopener noreferrer")= data
             else
-              a.contact__item-data-link(href=`${attr}: ${data}`, target="_blank", rel="noopener noreferrer")= data
+              a.contact__item-link(href=`${attr}: ${data}`, target="_blank", rel="noopener noreferrer")= data
