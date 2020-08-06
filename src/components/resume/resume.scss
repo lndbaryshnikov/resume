@@ -1,7 +1,7 @@
 .resume {
   display: flex;
   justify-content: space-between;
-  padding: 4.4rem 3.2rem 0 3.4rem;
+  padding: 4.7rem 3.52rem 0.32rem 3.72rem;
   font-size: 0.985rem;
   letter-spacing: -0.01rem;
   line-height: 1.17769;
@@ -33,7 +33,7 @@
 
   &__user-info {
     margin-bottom: 4.9rem;
-    margin-left: 0.3rem;
+    margin-left: 0.25rem;
 
     @media screen and (max-width: 726px) {
       margin-left: 0;
@@ -45,7 +45,7 @@
   }
 
   &__contact {
-    margin-bottom: 2.2715rem;
+    margin-bottom: 2.1rem;
   }
 
   &__skills {
@@ -53,11 +53,11 @@
   }
 
   &__education {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.6rem;
   }
 
   &__experience {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.6rem;
   }
 
   &__software {
