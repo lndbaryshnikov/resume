@@ -1,7 +1,7 @@
-@import '../software-item/software-item';
+@import '../../styles/variables/colors';
 
 .software {
-  &__items {
+  &__list {
     justify-content: space-between;
     display: flex;
     flex-flow: row wrap;
@@ -13,5 +13,46 @@
       flex-flow: column nowrap;
       height: auto;
     }
+  }
+
+  &__item {
+    max-width: 18rem;
+    width: 22.2vw;
+  
+    @media screen and (max-width: 726px) {
+      width: 50vw;
+    }
+  }
+
+  &__item-tool {
+    color: $black;
+    font-size: 1.66rem;
+    text-transform: uppercase;
+    letter-spacing: -0.03rem;
+    overflow-wrap: anywhere;
+
+    @media screen and (max-width: 400px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__item-scale {
+    background-color: $light-gray;
+    max-height: 1.36rem;
+    height: 1.772vw;
+    margin: 0.75rem 0 1.35rem 0.059rem;
+
+    @media screen and (max-width: 726px) {
+      height: 2.5vw;
+    }
+
+    @media screen and (max-width: 400px) {
+      margin-top: 0.3rem;
+    }
+  }
+
+  &__item-level {
+    background-color: $blue;
+    height: 100%;
   }
 }

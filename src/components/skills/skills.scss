@@ -1,10 +1,56 @@
-@import '../skills-item/skills-item';
+@import '../../styles/variables/colors';
 
 .skills {
-  &__items {
+  &__list {
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-top: 1.3rem;
+  }
+
+  &__item {
+    text-align: center;
+    width: 100%;
+  }
+
+  &__item-name {
+    color: $black;
+    font-size: 1.68rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 0.4rem;
+    margin-left: 0.27rem;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+
+    @media screen and (max-width: 400px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__item-level {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 1.3rem;
+    width: 78%;
+
+    @media screen and (max-width: 722px) {
+      width: 50vw;
+    }
+  }
+
+  &__item-point {
+    background-color: $light-gray;
+    border-radius: 50%;
+    height: 1.092rem;
+    width: 1.092rem;
+
+    @media screen and (max-width: 400px), screen and (max-width: 900px) and (min-width: 727px) {
+      height: 0.8rem;
+      width: 0.8rem;
+    }
+
+    &_checked {
+      background-color: $blue;
+    }  
   }
 }

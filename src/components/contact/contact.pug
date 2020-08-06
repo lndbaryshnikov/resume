@@ -1,5 +1,4 @@
 include ../block-header/block-header
-include ../contact-item/contact-item
 
 mixin contact(items)
   section.contact
@@ -7,4 +6,14 @@ mixin contact(items)
 
     .contact__table
       each item in items
-        +contact-item(item)
+        - var { type, data, attr } = item;
+
+        .contact__item
+          .contact__item-type= type
+          .contact__item-data
+            if !attr
+              span.contact__item-data-text= data
+            else if attr === "site"
+              a.contact__item-data-link(href=`http://${data}`, target="_blank", rel="noopener noreferrer")= data
+            else
+              a.contact__item-data-link(href=`${attr}: ${data}`, target="_blank", rel="noopener noreferrer")= data

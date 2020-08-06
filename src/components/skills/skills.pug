@@ -1,10 +1,21 @@
 include ../block-header/block-header
-include ../skills-item/skills-item
 
 mixin skills(items)
   section.skills
     +block-header("skills")
 
-    .skills__items
+    .skills__list
       each item in items
-        +skills-item(item)
+        - var { name, level, maxLevel = 12 } = item;
+        - var notChecked = maxLevel - level;
+
+        .skills__item
+          .skills__item-name= name
+          .skills__item-level
+            while level > 0
+              .skills__item-point.skills__item-point_checked
+              - level -= 1;
+
+            while notChecked > 0
+              .skills__item-point
+              - notChecked -= 1;
