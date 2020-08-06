@@ -7,17 +7,8 @@
     margin-top: 2.45rem;
     margin-left: 1.7rem;
 
-    @media screen and (max-width: 400px) {
-      margin-top: 1.5rem;
-    }
-
-    @media screen and (max-width: 600px) {
-      margin-left: 0.6rem;
-    }
-
     @media screen and (max-width: 726px) {
-      margin-left: 0.357rem;
-      margin-top: 0.071rem;
+      margin-top: 1.5rem;
     }
   }
 }
