@@ -27,7 +27,7 @@
   }
 
   &__item-tool {
-    color: $black;
+    color: $color-secondary-main;
     font-size: 1.66rem;
     text-transform: uppercase;
     letter-spacing: -0.03rem;
@@ -39,7 +39,7 @@
   }
 
   &__item-scale {
-    background-color: $light-gray;
+    background-color: $color-secondary-light;
     max-height: 1.36rem;
     height: 1.772vw;
     margin: 0.75rem 0 1.35rem 0.059rem;
@@ -54,7 +54,7 @@
   }
 
   &__item-level {
-    background-color: $blue;
+    background-color: $color-primary;
     height: 100%;
   }
 }

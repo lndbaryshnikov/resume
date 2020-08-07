@@ -16,7 +16,7 @@
   }
 
   &__item-name {
-    color: $black;
+    color: $color-secondary-main;
     font-size: 1.68rem;
     letter-spacing: -0.05rem;
     margin-bottom: 0.4rem;
@@ -41,7 +41,7 @@
   }
 
   &__item-point {
-    background-color: $light-gray;
+    background-color: $color-secondary-light;
     border-radius: 50%;
     height: 1.092rem;
     width: 1.092rem;
@@ -52,7 +52,7 @@
     }
 
     &_checked {
-      background-color: $blue;
+      background-color: $color-primary;
     }  
   }
 }

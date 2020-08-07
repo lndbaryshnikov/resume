@@ -11,20 +11,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.12rem solid $blue;
+    border: 0.12rem solid $color-primary;
     border-radius: 50%;
     margin: 0.7rem 0 1.9rem 1rem;
   }
 
   &__photo {
-    background-color: $blue;
+    background-color: $color-primary;
     border-radius: 50%;
     width: 12.6rem;
     height: 12.6rem;
   }
 
   &__description {
-    color: $black;
+    color: $color-secondary-main;
     line-height: 0.9;
     text-align: center;
     text-transform: uppercase;

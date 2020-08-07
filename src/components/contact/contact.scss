@@ -24,7 +24,7 @@
   }
 
   &__item-data {
-    color: $black;
+    color: $color-secondary-main;
     display: table-cell;
     font-size: 1.34rem;
     letter-spacing: -0.03rem;
@@ -38,7 +38,7 @@
   }
 
   &__item-type {
-    color: $blue;
+    color: $color-primary;
     display: table-cell;
     font-size: 1.3rem;
     font-weight: bold;
@@ -68,7 +68,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $blue;
+      color: $color-primary;
     }
   }
 }

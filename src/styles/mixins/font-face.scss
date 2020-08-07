@@ -3,7 +3,7 @@
   $style: normal;
 
   @if $type == 'bold' {
-    $weight: bold;
+    $weight: 700;
   }
   @else if $type == 'light-semi-ext' {
     $weight: 300;

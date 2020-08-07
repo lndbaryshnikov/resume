@@ -6,11 +6,11 @@
   padding-left: 1.65rem;
 
   &__item {
-    color: $black;
+    color: $color-secondary-main;
     position: relative;
 
     &::before {
-      background-color: $black;
+      background-color: $color-secondary-main;
       border-radius: 50%;
       content: '';
       display: inline-block;
@@ -47,7 +47,7 @@
 
     &_color {
       &_blue {
-        color: $blue;
+        color: $color-primary;
       }
     }
   }

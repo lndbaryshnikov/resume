@@ -5,17 +5,15 @@
   @include font-face('Myriad Pro', 'myriad-pro', $type);
 }
 
-html {
-  background-color: $resume-background;
-  color: $black;
-  font-family: 'Myriad Pro', 'Arial', sans-serif;
-  font-size: calc(10px + 0.5vw);
-  font-style: normal;
-  font-weight: normal;
-  max-width: 1920px;
-  min-width: 320px;
-  margin: auto;
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  font: normal normal 20px 'Myriad Pro', 'Arial', sans-serif;
+  color: $color-secondary-main;
+  
   @media screen and (max-width: 1094px) {
     font-size: 14px;
   }
@@ -25,7 +23,8 @@ html {
   }
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: auto;
 }
