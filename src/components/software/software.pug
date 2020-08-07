@@ -1,14 +1,14 @@
 include ../block-header/block-header
 
 mixin software(items)
-  .software
+  section.software
     +block-header("software")
   
-    .software__list
+    ul.software__list
       each item in items
         - var { tool, possession } = item;
 
-        .software__item
+        li.software__item
           .software__item-tool= tool
           .software__item-scale
             .software__item-level(style={width: `${possession}%`})

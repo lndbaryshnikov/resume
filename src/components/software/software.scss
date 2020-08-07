@@ -6,6 +6,7 @@
     display: flex;
     flex-flow: row wrap;
     width: 98.3%;
+    padding: 0;
     margin: 1.4rem 0.0295rem 0 0.5rem;
 
     @media screen and (max-width: 726px) {
@@ -18,6 +19,7 @@
   &__item {
     max-width: 18rem;
     width: 22.2vw;
+    list-style: none;
   
     @media screen and (max-width: 726px) {
       width: 50vw;

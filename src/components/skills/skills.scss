@@ -5,12 +5,14 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 1.3rem;
+    padding: 0;
+    margin: 1.3rem 0 0;
   }
 
   &__item {
     text-align: center;
     width: 100%;
+    list-style: none;
   }
 
   &__item-name {

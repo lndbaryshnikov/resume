@@ -1,13 +1,16 @@
 mixin progress-list(items, blockName)
   ul.progress-list
     each item in items
-      - var { name, periodFrom, periodTo, title, description, nameColor } = item;
+      - var { name, period, title, description, nameColor } = item;
       
       li.progress-list__item(class=`progress-list__item_type_for-${blockName}`)
         .progress-list__item-header
-          span.progress-list__item-name(class=[`progress-list__item-name_color_${nameColor}`])= name
-          span.progress-list__item-period
-            | // #[span.progress-list__item-period-part #{periodFrom}]
-            | - #[span.progress-list__item-period-part #{periodTo}]
+          - 
+            var itemNameClass = nameColor === "black" 
+              ? "progress-list__item-name"
+              : `progress-list__item-name progress-list__item-name_color_${nameColor}`;
+              
+          span(class=itemNameClass)= name
+          span.progress-list__item-period // !{period}
         span.progress-list__item-title= title
         p.progress-list__item-description= description

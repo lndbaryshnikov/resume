@@ -49,10 +49,6 @@
       &_blue {
         color: $blue;
       }
-
-      &_black {
-        color: inherit;
-      }
     }
   }
 
@@ -60,10 +56,6 @@
     display: inline-block;
     font-size: 1.7rem;
     letter-spacing: -0.04rem;
-  }
-
-  &__item-period-part {
-    white-space: nowrap;
   }
 
   &__item-title {

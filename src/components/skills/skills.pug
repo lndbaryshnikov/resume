@@ -4,12 +4,12 @@ mixin skills(items)
   section.skills
     +block-header("skills")
 
-    .skills__list
+    ul.skills__list
       each item in items
         - var { name, level, maxLevel = 12 } = item;
         - var notChecked = maxLevel - level;
 
-        .skills__item
+        li.skills__item
           .skills__item-name= name
           .skills__item-level
             while level > 0

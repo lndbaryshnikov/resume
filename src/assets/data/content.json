@@ -19,32 +19,28 @@
   "education": [
     { 
       "name": "master degree",
-      "periodFrom": "Feb 2011",
-      "periodTo": "Jun 2014",
+      "period": "Feb&nbsp;2011 - Jun&nbsp;2014",
       "title": "university name",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
       "nameColor": "blue"
     },
     { 
       "name": "master degree",
-      "periodFrom": "Feb 2011",
-      "periodTo": "Jun 2014",
+      "period": "Feb&nbsp;2011 - Jun&nbsp;2014",
       "title": "university name",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
       "nameColor": "blue"
     },
     { 
       "name": "master degree",
-      "periodFrom": "Feb 2011",
-      "periodTo": "Jun 2014",
+      "period": "Feb&nbsp;2011 - Jun&nbsp;2014",
       "title": "university name",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
       "nameColor": "blue"
     },
     { 
       "name": "master degree",
-      "periodFrom": "Feb 2011",
-      "periodTo": "Jun 2014",
+      "period": "Feb&nbsp;2011 - Jun&nbsp;2014",
       "title": "university name",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
       "nameColor": "blue"
@@ -53,24 +49,21 @@
   "experience": [
     {
       "name": "company name",
-      "periodFrom": "Feb 2011",
-      "periodTo": "Jun 2014",
+      "period": "Feb&nbsp;2011 - Jun&nbsp;2014",
       "title": "your job here",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
       "nameColor": "black"
     },
     {
       "name": "company name",
-      "periodFrom": "Feb 2011",
-      "periodTo": "Jun 2014",
+      "period": "Feb&nbsp;2011 - Jun&nbsp;2014",
       "title": "your job here",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
       "nameColor": "black"
     },
     {
       "name": "company name",
-      "periodFrom": "Feb 2011",
-      "periodTo": "Jun 2014",
+      "period": "Feb&nbsp;2011 - Jun&nbsp;2014",
       "title": "your job here",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.",
       "nameColor": "black"
