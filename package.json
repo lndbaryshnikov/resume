@@ -4,7 +4,7 @@
     "build": "webpack --mode production",
     "server": "webpack-dev-server --mode development --open",
     "deploy": "gh-pages -d dist",
-    "lint": "npm run pug-lint && npm run stylelint",
+    "lint": "npm run pugLint && npm run stylelint",
     "pugLint": "pug-lint --config .pug-lintrc src",
     "stylelint": "stylelint --config .stylelintrc \"src/**/*.scss\"",
     "stylelintFix": "stylelint --config .stylelintrc \"src/**/*.scss\" --fix"
