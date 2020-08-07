@@ -1,29 +1,14 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch",
     "server": "webpack-dev-server --mode development --open",
     "deploy": "gh-pages -d dist",
     "lint": "npm run pug-lint && npm run stylelint",
-    "pug-lint": "pug-lint --config .pug-lintrc src",
+    "pugLint": "pug-lint --config .pug-lintrc src",
     "stylelint": "stylelint --config .stylelintrc \"src/**/*.scss\"",
-    "stylelint-fix": "stylelint --config .stylelintrc \"src/**/*.scss\" --fix"
+    "stylelintFix": "stylelint --config .stylelintrc \"src/**/*.scss\" --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lndbaryshnikov/resume.git"
-  },
-  "author": "Leonid Baryshnikov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lndbaryshnikov/resume/issues"
-  },
-  "homepage": "https://github.com/lndbaryshnikov/resume#readme",
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "pug-lint": "^2.6.0",
