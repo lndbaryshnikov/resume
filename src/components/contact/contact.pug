@@ -2,18 +2,18 @@ include ../block-header/block-header
 
 mixin contact(items)
   section.contact
-    +block-header("contact")
+    +block-header('contact')
 
     .contact__table
       each item in items
-        - var { type, data, attr } = item;
+        - const { type, data, attr } = item;
 
         .contact__item
           .contact__item-type= type
           .contact__item-data
             if !attr
               span.contact__item-text= data
-            else if attr === "site"
+            else if attr === 'site'
               a.contact__item-link(href=`http://${data}`, target="_blank", rel="noopener noreferrer")= data
             else
               a.contact__item-link(href=`${attr}: ${data}`, target="_blank", rel="noopener noreferrer")= data

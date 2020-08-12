@@ -2,11 +2,11 @@ include ../block-header/block-header
 
 mixin software(items)
   section.software
-    +block-header("software")
+    +block-header('software')
   
     ul.software__list
       each item in items
-        - var { tool, possession } = item;
+        - const { tool, possession } = item;
 
         li.software__item
           .software__item-tool= tool

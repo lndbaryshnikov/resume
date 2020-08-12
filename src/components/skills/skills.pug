@@ -2,12 +2,14 @@ include ../block-header/block-header
 
 mixin skills(items)
   section.skills
-    +block-header("skills")
+    +block-header('skills')
 
     ul.skills__list
       each item in items
-        - var { name, level, maxLevel = 12 } = item;
-        - var notChecked = maxLevel - level;
+        - 
+          const { name, maxLevel = 12 } = item;
+          let { level } = item;
+          let notChecked = maxLevel - level;
 
         li.skills__item
           .skills__item-name= name
