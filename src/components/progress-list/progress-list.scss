@@ -10,10 +10,9 @@
     position: relative;
 
     &::before {
+      content: '';
       background-color: $color-secondary-main;
       border-radius: 50%;
-      content: '';
-      display: inline-block;
       height: 1.324rem;
       left: -2.596rem;
       position: absolute;

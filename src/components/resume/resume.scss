@@ -37,24 +37,12 @@
     margin-bottom: 4.9rem;
   }
 
-  &__profile {
+  &__profile, &__skills, &__education, &__experience {
     margin-bottom: 2.6rem;
   }
 
   &__contact {
-    margin-bottom: 2.1rem;
-  }
-
-  &__skills {
-    margin-bottom: 2.6rem;
-  }
-
-  &__education {
-    margin-bottom: 2.6rem;
-  }
-
-  &__experience {
-    margin-bottom: 2.6rem;
+    margin-bottom: 1.8rem;
   }
 
   &__software {

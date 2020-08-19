@@ -3,10 +3,9 @@
 .contact {
   &__table {
     display: table;
-    line-height: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
 
-    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
+    @media screen and (max-width: 400px), screen and (min-width: 727px) and (max-width: 1094px) {
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -16,7 +15,7 @@
   &__item {
     display: table-row;
   
-    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
+    @media screen and (max-width: 400px), screen and (min-width: 727px) and (max-width: 1094px) {
       display: block;
       padding: 0.714rem 0;
       text-align: center;
@@ -28,10 +27,8 @@
     display: table-cell;
     font-size: 1.34rem;
     letter-spacing: -0.03rem;
-    padding-left: 0.75rem;
-    line-height: 1;
 
-    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
+    @media screen and (max-width: 400px), screen and (min-width: 727px) and (max-width: 1094px) {
       display: block;
       padding: 0;
     }
@@ -43,10 +40,10 @@
     font-size: 1.3rem;
     font-weight: bold;
     letter-spacing: -0.03rem;
-    padding: 1.55rem 1.7rem 0.9rem 0.1rem;
+    padding: 1rem 2.5rem 0.9rem 0.1rem;
     text-transform: uppercase;
 
-    @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
+    @media screen and (max-width: 400px), screen and (min-width: 727px) and (max-width: 1094px) {
       display: block;
       margin-bottom: 0.714rem;
       padding: 0;
@@ -57,7 +54,7 @@
     .contact-item__type {
       padding-top: 1.4rem;
 
-      @media screen and (max-width: 400px), screen and (max-width: 1094px) and (min-width: 727px) {
+      @media screen and (max-width: 400px), screen and (min-width: 727px) and (max-width: 1094px) {
         padding-top: 0;
       }
     }
