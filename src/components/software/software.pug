@@ -2,7 +2,7 @@ include ../block-header/block-header
 
 mixin software(items)
   section.software
-    +block-header('software')
+    +block-header({ blockName: 'software', variant: 'condensed' })
   
     ul.software__list
       each item in items

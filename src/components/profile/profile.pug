@@ -2,6 +2,6 @@ include ../block-header/block-header
 
 mixin profile({ main, conclusion })
   section.profile
-    +block-header('profile')
+    +block-header({ blockName: 'profile' })
 
     .profile__content #{main} #[strong #{conclusion}] 

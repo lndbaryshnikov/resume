@@ -3,7 +3,7 @@ include ../progress-list/progress-list
 
 mixin education(items)
   section.education
-    +block-header('education')
+    +block-header({ blockName: 'education', variant: 'condensed' })
 
     .education__list
       +progress-list(items, 'education')

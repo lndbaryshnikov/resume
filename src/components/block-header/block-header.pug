@@ -1,8 +1,16 @@
-mixin block-header(blockName)
+mixin block-header({ blockName, variant })
+  - 
+    const modifiers = {
+      variant: {
+        condensed: 'block-header__name_variant_condensed',
+      },
+    };
+
   header.block-header
     img.block-header__icon(
       src=require(`../../components/block-header/icons/${blockName}-icon.png`),
       alt=blockName
     )
-    .block-header__name(class=`block-header__name_type_for-${blockName}`)= blockName
+
+    .block-header__name(class=modifiers.variant[variant])= blockName
     .block-header__line

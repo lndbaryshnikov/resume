@@ -2,7 +2,7 @@ include ../block-header/block-header
 
 mixin contact(items)
   section.contact
-    +block-header('contact')
+    +block-header({ blockName: 'contact' })
 
     .contact__table
       each item in items

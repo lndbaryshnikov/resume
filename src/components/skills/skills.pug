@@ -2,7 +2,7 @@ include ../block-header/block-header
 
 mixin skills(items)
   section.skills
-    +block-header('skills')
+    +block-header({ blockName: 'skills' })
 
     ul.skills__list
       each item in items

@@ -3,7 +3,7 @@ include ../progress-list/progress-list
 
 mixin experience(items)
   section.experience
-    +block-header('experience')
+    +block-header({ blockName: 'experience', variant: 'condensed' })
 
     .experience__list
       +progress-list(items, 'experience')
