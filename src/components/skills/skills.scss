@@ -16,7 +16,7 @@
   }
 
   &__item-name {
-    color: $color-secondary-main;
+    color: $color-text-primary;
     font-size: 1.68rem;
     letter-spacing: -0.05rem;
     margin-bottom: 0.4rem;
@@ -41,7 +41,7 @@
   }
 
   &__item-point {
-    background-color: $color-secondary-light;
+    background-color: $color-secondary;
     border-radius: 50%;
     height: 1.092rem;
     width: 1.092rem;

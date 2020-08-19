@@ -6,12 +6,12 @@
   padding-left: 1.65rem;
 
   &__item {
-    color: $color-secondary-main;
+    color: $color-text-primary;
     position: relative;
 
     &::before {
       content: '';
-      background-color: $color-secondary-main;
+      background-color: $color-text-primary;
       border-radius: 50%;
       height: 1.324rem;
       left: -2.596rem;
