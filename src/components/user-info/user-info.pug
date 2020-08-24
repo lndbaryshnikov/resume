@@ -1,8 +1,9 @@
 mixin user-info({ name = 'name here', surname = 'surname', job = 'graphic designer' } = {})
   section.user-info
     .user-info__photo-frame
+      - const imageName = `${name}-${surname}`.replace(/ /g, '-').toLowerCase();
       img.user-info__photo(
-        src=require(`../../components/user-info/images/${name} ${surname}.png`),
+        src=require(`../../components/user-info/images/${imageName}.png`),
         alt=`${name} ${surname} photo`
       )
 
