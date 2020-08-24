@@ -1,8 +1,8 @@
-mixin progress-list(items, blockName)
+mixin progress-list({ items, nameColor})
   ul.progress-list
     each item in items
       - 
-        const { name, period, title, description, nameColor } = item;
+        const { name, period, title, description } = item;
         
         const modifiers = {
           nameColor: {
@@ -10,7 +10,7 @@ mixin progress-list(items, blockName)
           },
         };
 
-      li.progress-list__item(class=`progress-list__item_type_for-${blockName}`)
+      li.progress-list__item
         .progress-list__item-header              
           span.progress-list__item-name(class=modifiers.nameColor[nameColor])= name
           span.progress-list__item-period // !{period}

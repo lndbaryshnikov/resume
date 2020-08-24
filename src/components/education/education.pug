@@ -6,6 +6,4 @@ mixin education(items)
     +block-header({ blockName: 'education', variant: 'condensed' })
 
     .education__list
-      - items.forEach((item) => { item.nameColor = 'blue'; });
-      
-      +progress-list(items, 'education')
+      +progress-list({ items, nameColor: 'blue' })

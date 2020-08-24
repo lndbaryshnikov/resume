@@ -23,18 +23,6 @@
     &:nth-child(1) {
       margin-bottom: 0.15rem;
     }
-
-    &_type {
-      &_for-experience {
-        &:nth-child(1) {
-          margin-bottom: 0;
-        }
-
-        &:nth-child(2) {
-          margin-bottom: 0.15rem;
-        }
-      }
-    }
   }
 
   &__item-name {
@@ -74,6 +62,6 @@
     font-size: 1rem;
     letter-spacing: -0.018rem;
     line-height: 1.18;
-    margin: 0.168rem 0 0.65rem 0.118rem;
+    margin: 0.175rem 0 0.65rem 0.118rem;
   }
 }
